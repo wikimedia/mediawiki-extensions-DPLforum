@@ -633,7 +633,7 @@ $messages['oc'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
-	'dplforum-never' => 'Nie net',
+	'dplforum-never' => 'Nie naett',
 );
 
 /** Polish (Polski)
