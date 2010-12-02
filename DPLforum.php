@@ -36,12 +36,13 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 $wgExtensionFunctions[] = 'wfDPLforum';
+$wgHooks['ParserFirstCallInit'][] = 'wfDPLinit';
 $wgHooks['LanguageGetMagic'][] = 'wfDPLmagic';
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'DPLforum',
 	'author' => 'Ross McClure',
-	'version' => '3.3.1',
+	'version' => '3.3.2',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:DPLforum',
 	'descriptionmsg' => 'dplforum-desc',
 );
@@ -51,11 +52,13 @@ $wgExtensionMessagesFiles['DPLforum'] = $dir . 'DPLforum.i18n.php';
 $wgAutoloadClasses['DPLForum'] = $dir . 'DPLforum_body.php';
 
 function wfDPLforum() {
-	global $wgParser;
+	wfLoadExtensionMessages( 'DPLforum' );  // for compatibility with MW < 1.16
+}
 
-	wfLoadExtensionMessages( 'DPLforum' );
-	$wgParser->setHook( 'forum', 'parseForum' );
-	$wgParser->setFunctionHook( 'forumlink', array( new DPLForum(), 'link' ) );
+function wfDPLinit( &$parser ) {
+	$parser->setHook( 'forum', 'parseForum' );
+	$parser->setFunctionHook( 'forumlink', array( new DPLForum(), 'link' ) );
+	return true;
 }
 
 function wfDPLmagic( &$magicWords, $langCode = 'en' ) {
