@@ -60,6 +60,8 @@ class DPLForum {
 	var $sInput;
 	var $sOmit;
 	var $vMarkNew;
+	var $sCreationDateFormat;
+	var $sLastEditFormat;
 
 	function cat( &$parser, $name ) {
 		$cats = array();
@@ -141,6 +143,16 @@ class DPLForum {
 		return htmlspecialchars( wfMsg( $type ) );
 	}
 
+	function date( $ts, $type = 'date', $df = false ) {  // based on Language::date()
+		global $wgLang;
+		$ts = wfTimestamp( TS_MW, $ts );
+		$ts = $wgLang->userAdjust( $ts );
+		if ( $df === false ) {
+			$df = $wgLang->getDateFormatString( $type, $wgLang->dateFormat( true ) );
+		}
+		return $wgLang->sprintfDate( $df, $ts );
+	}
+
 	function parse( &$input, &$parser ) {
 		global $wgContLang;
 
@@ -150,8 +162,10 @@ class DPLForum {
 		$this->bAddAuthor = ( $this->get( 'addauthor' ) == 'true' );
 		$this->bTimestamp = ( $this->get( 'timestamp' ) != 'false' );
 		$this->bAddLastEdit = ( $this->get( 'addlastedit' ) != 'false' );
+		$this->sLastEditFormat = $this->get( 'lasteditformat', false );
 		$this->bAddLastEditor = ( $this->get( 'addlasteditor' ) == 'true' );
 		$this->bAddCreationDate = ( $this->get( 'addcreationdate' ) == 'true' );
+		$this->sCreationDateFormat = $this->get( 'creationdateformat', false );
 
 		switch( $this->get( 'historylink' ) ) {
 			case 'embed':
@@ -374,7 +388,7 @@ class DPLForum {
 
 	// Generates a single line of output.
 	function buildOutput( $page, $title, $time, $user = '', $author = '', $made = '' ) {
-		global $wgLang, $wgUser;
+		global $wgUser;
 
 		$sk = $wgUser->getSkin();
 		$tm =& $this->bTableMode;
@@ -382,7 +396,7 @@ class DPLForum {
 
 		if ( $this->bAddCreationDate ) {
 			if ( is_numeric( $made ) ) {
-				$made = $wgLang->date( $made, true );
+				$made = $this->date( $made, 'date', $this->sCreationDateFormat );
 			}
 
 			if ( $page && $this->bLinkHistory && !$this->bAddLastEdit ) {
@@ -456,7 +470,7 @@ class DPLForum {
 
 		if ( $this->bAddLastEdit ) {
 			if ( is_numeric( $time ) ) {
-				$time = $wgLang->timeanddate( $time, true );
+				$time = $this->date( $time, 'both', $this->sLastEditFormat );
 			}
 
 			if ( $page && $this->bLinkHistory ) {
