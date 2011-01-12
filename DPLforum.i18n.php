@@ -172,6 +172,14 @@ $messages['ca'] = array(
 	'dplforum-toomany' => 'Fòrum DPL: massa categories!',
 );
 
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
+$messages['ce'] = array(
+	'dplforum-toofew' => 'ХIорам DPL: ЧIогIа кIезиг кадегарш!',
+	'dplforum-toomany' => 'ХIорам DPL: ЧIогIа дукха кадегарш!',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
