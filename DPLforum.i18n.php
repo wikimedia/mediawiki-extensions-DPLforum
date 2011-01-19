@@ -176,6 +176,10 @@ $messages['ca'] = array(
  * @author Sasan700
  */
 $messages['ce'] = array(
+	'dplforum-desc' => 'Хlорам шорйеш, дукхах йерг DPL',
+	'dplforum-by' => 'кху $1',
+	'dplforum-edited' => '— тlаьххьара нисдар',
+	'dplforum-never' => 'Цкъа а',
 	'dplforum-toofew' => 'ХIорам DPL: ЧIогIа кIезиг кадегарш!',
 	'dplforum-toomany' => 'ХIорам DPL: ЧIогIа дукха кадегарш!',
 );
