@@ -108,7 +108,7 @@ $messages['az'] = array(
 	'dplforum-toomany' => 'Forum DPL: Kateqoriya sayı həddən artıq azdır!',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -780,7 +780,7 @@ $messages['sk'] = array(
 	'dplforum-toomany' => 'DPL fórum: Príliš mnoho kategórií!',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Verlor
  * @author Михајло Анђелковић
@@ -793,7 +793,7 @@ $messages['sr-ec'] = array(
 	'dplforum-toomany' => 'DPL форум: превише категорија!',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
