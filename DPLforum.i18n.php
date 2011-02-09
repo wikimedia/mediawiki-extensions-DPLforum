@@ -787,7 +787,7 @@ $messages['sk'] = array(
  */
 $messages['sr-ec'] = array(
 	'dplforum-by' => 'од $1',
-	'dplforum-edited' => '— последњи пут измењено',
+	'dplforum-edited' => '– последња измена',
 	'dplforum-never' => 'Никад',
 	'dplforum-toofew' => 'DPL форум: премало категорија!',
 	'dplforum-toomany' => 'DPL форум: превише категорија!',
