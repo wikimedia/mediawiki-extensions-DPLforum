@@ -507,6 +507,13 @@ $messages['lb'] = array(
 	'dplforum-toomany' => 'DPL Forum: Ze wéineg Kategorien!',
 );
 
+/** Latgalian (Latgaļu)
+ * @author Dark Eagle
+ */
+$messages['ltg'] = array(
+	'dplforum-never' => 'Nikod',
+);
+
 /** Eastern Mari (Олык Марий)
  * @author Azim
  * @author Сай
