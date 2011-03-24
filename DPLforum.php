@@ -52,7 +52,7 @@ $wgExtensionMessagesFiles['DPLforum'] = $dir . 'DPLforum.i18n.php';
 $wgAutoloadClasses['DPLForum'] = $dir . 'DPLforum_body.php';
 
 function wfDPLforum() {
-	wfLoadExtensionMessages( 'DPLforum' );  // for compatibility with MW < 1.16
+	  // for compatibility with MW < 1.16
 }
 
 function wfDPLinit( &$parser ) {
