@@ -132,6 +132,18 @@ $messages['bg'] = array(
 	'dplforum-toomany' => 'DPL Форум: Твърде много категории!',
 );
 
+/** Bengali (বাংলা)
+ * @author Wikitanvir
+ */
+$messages['bn'] = array(
+	'dplforum-desc' => 'ডিপিএল-ভিত্তিক ফোরাম এক্সটেনশন',
+	'dplforum-by' => '$1-এর মাধ্যমে',
+	'dplforum-edited' => '- সর্বশেষ সম্পাদিত',
+	'dplforum-never' => 'কখনো নয়',
+	'dplforum-toofew' => 'ডিপিএল ফোরাম: কোনো বিষয়শ্রেণী নয়!',
+	'dplforum-toomany' => 'ডিপিএল ফোরাম: অনেক বেশি বিষয়শ্রেণী‍!',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
@@ -327,6 +339,15 @@ $messages['fr'] = array(
 	'dplforum-never' => 'Jamais',
 	'dplforum-toofew' => 'DPL Forum : pas assez de catégories !',
 	'dplforum-toomany' => 'DPL Forum : trop de catégories !',
+);
+
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'dplforum-by' => 'per $1',
+	'dplforum-edited' => '- Dèrriér changement',
+	'dplforum-never' => 'Jamés',
 );
 
 /** Galician (Galego)
