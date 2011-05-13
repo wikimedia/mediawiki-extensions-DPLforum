@@ -572,11 +572,12 @@ $messages['ml'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Htt
  * @author Kaustubh
  */
 $messages['mr'] = array(
 	'dplforum-desc' => 'DPL-आधारित चर्चासत्र विस्तार',
-	'dplforum-by' => 'कडून $1',
+	'dplforum-by' => '$1 द्वारे',
 	'dplforum-edited' => '- शेवटी बदललेली',
 	'dplforum-never' => 'कधीच नाही',
 	'dplforum-toofew' => 'डीपीएल चर्चासत्र: खूपच कमी वर्ग!',
