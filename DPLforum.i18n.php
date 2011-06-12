@@ -966,10 +966,16 @@ $messages['vo'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Hydra
  * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
+	'dplforum-desc' => '基于 DPL 论坛推广',
+	'dplforum-by' => '由 $1',
+	'dplforum-edited' => '- 最后编辑',
 	'dplforum-never' => '从不',
+	'dplforum-toofew' => 'DPL 论坛：太少类别！',
+	'dplforum-toomany' => 'DPL 论坛：太多类别！',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
