@@ -1,7 +1,7 @@
 <?php
 /**
 
- DPLforum v3.3.1 -- DynamicPageList-based forum extension
+ DPLforum v3.3.3 -- DynamicPageList-based forum extension
 
  Author: Ross McClure
  http://www.mediawiki.org/wiki/User:Algorithm
@@ -26,7 +26,7 @@
  http://www.gnu.org/copyleft/gpl.html
 
  To install, add following to LocalSettings.php
-   require_once("extensions/DPLforum/DPLforum.php");
+   require_once("$IP/extensions/DPLforum/DPLforum.php");
 
 */
 
@@ -35,19 +35,29 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 1 );
 }
 
-$wgHooks['ParserFirstCallInit'][] = 'wfDPLinit';
-$wgHooks['LanguageGetMagic'][] = 'wfDPLmagic';
+// Extension credits that will show up on Special:Version
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'DPLforum',
 	'author' => 'Ross McClure',
-	'version' => '3.3.2',
+	'version' => '3.3.3',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:DPLforum',
 	'descriptionmsg' => 'dplforum-desc',
 );
 
+// Define the namespace constants
+define( 'NS_FORUM', 110 );
+define( 'NS_FORUM_TALK', 111 );
+
+// Hooked functions
+$wgHooks['ParserFirstCallInit'][] = 'wfDPLinit';
+$wgHooks['LanguageGetMagic'][] = 'wfDPLmagic';
+$wgHooks['CanonicalNamespaces'][] = 'wfDPLforumCanonicalNamespaces';
+
+// Set up i18n and autoload the main class
 $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['DPLforum'] = $dir . 'DPLforum.i18n.php';
+$wgExtensionMessagesFiles['DPLforumNamespaces'] = $dir . 'DPLforum.namespaces.php';
 $wgAutoloadClasses['DPLForum'] = $dir . 'DPLforum_body.php';
 
 function wfDPLinit( &$parser ) {
@@ -67,4 +77,17 @@ function wfDPLmagic( &$magicWords, $langCode = 'en' ) {
 function parseForum( $input, $argv, $parser ) {
 	$f = new DPLForum();
 	return $f->parse( $input, $parser );
+}
+
+/**
+ * Register the canonical names for our namespace and its talkspace.
+ *
+ * @param $list Array: array of namespace numbers with corresponding
+ *                     canonical names
+ * @return Boolean: true
+ */
+function wfDPLforumCanonicalNamespaces( &$list ) {
+	$list[NS_FORUM] = 'Forum';
+	$list[NS_FORUM_TALK] = 'Forum_talk';
+	return true;
 }
