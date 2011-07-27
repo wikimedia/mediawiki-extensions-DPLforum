@@ -68,8 +68,9 @@ class DPLForum {
 		if ( preg_match_all( "/^\s*$name\s*=\s*(.*)/mi", $this->sInput, $matches ) ) {
 			foreach ( $matches[1] as $cat ) {
 				$title = Title::newFromText( $parser->replaceVariables( trim( $cat ) ) );
-				if ( !is_null( $title ) )
+				if ( !is_null( $title ) ) {
 					$cats[] = $title;
+				}
 			}
 		}
 		return $cats;
@@ -78,42 +79,48 @@ class DPLForum {
 	function get( $name, $value = null, $parser = null ) {
 		if ( preg_match( "/^\s*$name\s*=\s*(.*)/mi", $this->sInput, $matches ) ) {
 			$arg = trim( $matches[1] );
-			if ( is_int( $value ) )
+			if ( is_int( $value ) ) {
 				return intval( $arg );
-			elseif ( is_null( $parser ) )
+			} elseif ( is_null( $parser ) ) {
 				return htmlspecialchars( $arg );
-			else
+			} else {
 				return $parser->replaceVariables( $arg );
+			}
 		}
 		return $value;
 	}
 
 	function link( &$parser, $count, $page = '', $text = '' ) {
 		$count = intval( $count );
-		if ( $count < 1 )
+		if ( $count < 1 ) {
 			return '';
+		}
 
-		if ( $this->requireCache )
+		if ( $this->requireCache ) {
 			$offset = 0;
-		else {
+		} else {
 			global $wgRequest;
 			$parser->disableCache();
 			$offset = intval( $wgRequest->getVal( 'offset', '' ) );
 		}
 
 		$i = intval( $page );
-		if ( ( $i != 0 ) && ctype_digit( $page[0] ) )
+		if ( ( $i != 0 ) && ctype_digit( $page[0] ) ) {
 			$i -= 1;
-		else
+		} else {
 			$i += intval( $offset / $count );
-		if ( $this->link_test( $i, $page ) )
+		}
+		if ( $this->link_test( $i, $page ) ) {
 			return '';
+		}
 
-		if ( $text === '' )
+		if ( $text === '' ) {
 			$text = ( $i + 1 );
+		}
 		$page = ( $count * $i );
-		if ( $page == $offset )
+		if ( $page == $offset ) {
 			return $text;
+		}
 
 		return '[' . $parser->replaceVariables( '{{fullurl:{{FULLPAGENAME}}|offset=' . $page . '}} ' ) . $text . ']';
 	}
@@ -137,13 +144,14 @@ class DPLForum {
 	}
 
 	function msg( $type, $error = null ) {
-		if ( $error && ( $this->get( 'suppresserrors' ) == 'true' ) )
+		if ( $error && ( $this->get( 'suppresserrors' ) == 'true' ) ) {
 			return '';
+		}
 
 		return htmlspecialchars( wfMsg( $type ) );
 	}
 
-	function date( $ts, $type = 'date', $df = false ) {  // based on Language::date()
+	function date( $ts, $type = 'date', $df = false ) { // based on Language::date()
 		global $wgLang;
 		$ts = wfTimestamp( TS_MW, $ts );
 		$ts = $wgLang->userAdjust( $ts );
@@ -186,22 +194,25 @@ class DPLForum {
 		}
 
 		$arg = $this->get( 'compact' );
-		if ( $arg == 'all' || strpos( $arg, 'edit' ) === 0 )
-		$this->bCompactEdit = $this->bAddLastEdit;
+		if ( $arg == 'all' || strpos( $arg, 'edit' ) === 0 ) {
+			$this->bCompactEdit = $this->bAddLastEdit;
+		}
 		$this->bCompactAuthor = ( $arg == 'author' || $arg == 'all' );
 
 		$arg = $this->get( 'namespace', '', $parser );
 		$iNamespace = $wgContLang->getNsIndex( $arg );
 		if ( !$iNamespace ) {
-			if ( ( $arg ) || ( $arg === '0' ) )
+			if ( ( $arg ) || ( $arg === '0' ) ) {
 				$iNamespace = intval( $arg );
-			else
-				$iNamespace = - 1;
+			} else {
+				$iNamespace = -1;
+			}
 		}
-		if ( $iNamespace < 0 )
+		if ( $iNamespace < 0 ) {
 			$this->bShowNamespace = ( $this->get( 'shownamespace' ) != 'false' );
-		else
+		} else {
 			$this->bShowNamespace = ( $this->get( 'shownamespace' ) == 'true' );
+		}
 
 		$this->bTableMode = false;
 		$sStartItem = $sEndItem = '';
@@ -234,10 +245,12 @@ class DPLForum {
 		$output = '';
 
 		if ( $sPrefix === '' && ( ( $cats < 1 && $iNamespace < 0 ) ||
-		( $total < $this->minCategories ) ) )
+		( $total < $this->minCategories ) ) ) {
 			return $this->msg( 'dplforum-toofew', 1 );
-		if ( ( $total > $this->maxCategories ) && ( !$this->unlimitedCategories ) )
+		}
+		if ( ( $total > $this->maxCategories ) && ( !$this->unlimitedCategories ) ) {
 			return $this->msg( 'dplforum-toomany', 1 );
+		}
 
 		$count = 1;
 		$start = $this->get( 'start', 0 );
@@ -251,18 +264,21 @@ class DPLForum {
 				$start += intval( $wgRequest->getVal( 'offset' ) );
 			}
 		}
-		if ( $start < 0 )
+		if ( $start < 0 ) {
 			$start = 0;
+		}
 
 		if ( is_null( $title ) ) {
 			$count = $this->get( 'count', 0 );
 			if ( $count > 0 ) {
-				if ( $count > $this->maxResultCount )
+				if ( $count > $this->maxResultCount ) {
 					$count = $this->maxResultCount;
-			} elseif ( $this->unlimitedResults )
+				}
+			} elseif ( $this->unlimitedResults ) {
 				$count = 0x7FFFFFFF; // maximum integer value
-			else
+			} else {
 				$count = $this->maxResultCount;
+			}
 		}
 
 		// build the SQL query
@@ -416,7 +432,7 @@ class DPLForum {
 		}
 
 		if ( $tm ) {
-			$output .= "<td class='forum_title'>";
+			$output .= '<td class="forum_title">';
 		}
 
 		$text = $query = $props = '';
