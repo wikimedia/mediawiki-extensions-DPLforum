@@ -774,7 +774,7 @@ $messages['ru'] = array(
 	'dplforum-toomany' => 'Форум DPL: Слишком много категорий!',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
