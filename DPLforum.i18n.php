@@ -810,7 +810,7 @@ $messages['sk'] = array(
 	'dplforum-toomany' => 'DPL fórum: Príliš mnoho kategórií!',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Verlor
  * @author Михајло Анђелковић
@@ -823,7 +823,7 @@ $messages['sr-ec'] = array(
 	'dplforum-toomany' => 'DPL форум: превише категорија!',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
