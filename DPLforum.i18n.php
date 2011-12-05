@@ -280,12 +280,13 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Ciencia Al Poder
  * @author Crazymadlover
  */
 $messages['es'] = array(
 	'dplforum-desc' => 'Extensión de foro basado en DPL',
 	'dplforum-by' => 'por $1',
-	'dplforum-edited' => '- ültimo editado',
+	'dplforum-edited' => '- Última edición',
 	'dplforum-never' => 'Nunca',
 	'dplforum-toofew' => 'Foro DPL: muy pocas categorías!',
 	'dplforum-toomany' => 'Foro DPL: demasiadas categorías!',
