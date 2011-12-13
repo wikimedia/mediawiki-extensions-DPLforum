@@ -41,7 +41,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'DPLforum',
 	'author' => 'Ross McClure',
 	'version' => '3.3.3',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:DPLforum',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:DPLforum',
 	'descriptionmsg' => 'dplforum-desc',
 );
 
