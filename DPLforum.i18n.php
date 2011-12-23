@@ -829,7 +829,10 @@ $messages['sr-ec'] = array(
  */
 $messages['sr-el'] = array(
 	'dplforum-by' => 'od $1',
+	'dplforum-edited' => '– poslednja izmena',
 	'dplforum-never' => 'Nikad',
+	'dplforum-toofew' => 'DPL forum: premalo kategorija!',
+	'dplforum-toomany' => 'DPL forum: previše kategorija!',
 );
 
 /** Seeltersk (Seeltersk)
@@ -984,6 +987,11 @@ $messages['zh-hans'] = array(
  * @author Liangent
  */
 $messages['zh-hant'] = array(
+	'dplforum-desc' => '基於 DPL 論壇推廣',
+	'dplforum-by' => '由 $1',
+	'dplforum-edited' => '- 最後編輯',
 	'dplforum-never' => '從不',
+	'dplforum-toofew' => 'DPL 論壇：太少類別！',
+	'dplforum-toomany' => 'DPL 論壇：太多類別！',
 );
 
