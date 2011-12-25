@@ -651,7 +651,7 @@ $messages['nn'] = array(
  * @author Jon Harald Søby
  * @author Laaknor
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'dplforum-desc' => 'DPL-basert forumutvidelse',
 	'dplforum-by' => 'av $1',
 	'dplforum-edited' => '- sist endret',
