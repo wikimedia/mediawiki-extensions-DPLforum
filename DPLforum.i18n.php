@@ -613,6 +613,19 @@ $messages['nah'] = array(
 	'dplforum-never' => 'Aīcmah',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Laaknor
+ */
+$messages['nb'] = array(
+	'dplforum-desc' => 'DPL-basert forumutvidelse',
+	'dplforum-by' => 'av $1',
+	'dplforum-edited' => '- sist endret',
+	'dplforum-never' => 'Aldri',
+	'dplforum-toofew' => 'DPL-forum: For få kategorier.',
+	'dplforum-toomany' => 'DPL-forum: For mange kategorier.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -645,19 +658,6 @@ $messages['nn'] = array(
 	'dplforum-never' => 'Aldri',
 	'dplforum-toofew' => 'DPL-forum: For få kategoriar!',
 	'dplforum-toomany' => 'DPL-forum: For mange kategoriar!',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Laaknor
- */
-$messages['nb'] = array(
-	'dplforum-desc' => 'DPL-basert forumutvidelse',
-	'dplforum-by' => 'av $1',
-	'dplforum-edited' => '- sist endret',
-	'dplforum-never' => 'Aldri',
-	'dplforum-toofew' => 'DPL-forum: For få kategorier.',
-	'dplforum-toomany' => 'DPL-forum: For mange kategorier.',
 );
 
 /** Occitan (Occitan)
