@@ -40,7 +40,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'DPLforum',
 	'author' => 'Ross McClure',
-	'version' => '3.3.3',
+	'version' => '3.4.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:DPLforum',
 	'descriptionmsg' => 'dplforum-desc',
 );
@@ -51,26 +51,18 @@ define( 'NS_FORUM_TALK', 111 );
 
 // Hooked functions
 $wgHooks['ParserFirstCallInit'][] = 'wfDPLinit';
-$wgHooks['LanguageGetMagic'][] = 'wfDPLmagic';
 $wgHooks['CanonicalNamespaces'][] = 'wfDPLforumCanonicalNamespaces';
 
 // Set up i18n and autoload the main class
 $dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['DPLforum'] = $dir . 'DPLforum.i18n.php';
+$wgExtensionMessagesFiles['DPLforumMagic'] = $dir . 'DPLforum.i18n.magic.php';
 $wgExtensionMessagesFiles['DPLforumNamespaces'] = $dir . 'DPLforum.namespaces.php';
 $wgAutoloadClasses['DPLForum'] = $dir . 'DPLforum_body.php';
 
 function wfDPLinit( &$parser ) {
 	$parser->setHook( 'forum', 'parseForum' );
 	$parser->setFunctionHook( 'forumlink', array( new DPLForum(), 'link' ) );
-	return true;
-}
-
-function wfDPLmagic( &$magicWords, $langCode = 'en' ) {
-	switch( $langCode ) {
-		default:
-			$magicWords['forumlink'] = array( 0, 'forumlink' );
-	}
 	return true;
 }
 
