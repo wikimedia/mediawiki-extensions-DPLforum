@@ -529,6 +529,18 @@ $messages['lb'] = array(
 	'dplforum-toomany' => 'DPL Forum: Ze wéineg Kategorien!',
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Vpovilaitis
+ */
+$messages['lt'] = array(
+	'dplforum-desc' => 'DPL-pavidalo forumų plėtinys',
+	'dplforum-by' => 'naudotojas $1',
+	'dplforum-edited' => '- Paskutinis pakeitimas',
+	'dplforum-never' => 'Naujesnis',
+	'dplforum-toofew' => 'DPL Forumas: Per mažai kategorijų!',
+	'dplforum-toomany' => 'DPL Forumas: Per daug kategorijų!',
+);
+
 /** Latgalian (Latgaļu)
  * @author Dark Eagle
  */
