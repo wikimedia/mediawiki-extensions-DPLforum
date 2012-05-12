@@ -662,6 +662,7 @@ $messages['nl'] = array(
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Frokor
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'dplforum-desc' => 'DPL-basert forumtillegg',
@@ -950,7 +951,7 @@ $messages['vec'] = array(
 	'dplforum-toomany' => 'DPL Forum: Massa categorie!',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
