@@ -96,7 +96,7 @@ $messages['arz'] = array(
 	'dplforum-toomany' => 'منتدى DPL: تصنيفات كثيرة جدا!',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Sortilegus
  */
 $messages['az'] = array(
@@ -121,7 +121,7 @@ $messages['be-tarask'] = array(
 	'dplforum-toomany' => 'Форум DPL: Зашмат катэгорыяў!',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -144,7 +144,7 @@ $messages['bn'] = array(
 	'dplforum-toomany' => 'ডিপিএল ফোরাম: অনেক বেশি বিষয়শ্রেণী‍!',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -156,7 +156,7 @@ $messages['br'] = array(
 	'dplforum-toomany' => 'Forom DPL : Re a rummadoù !',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -168,7 +168,7 @@ $messages['bs'] = array(
 	'dplforum-toomany' => 'DPL Forum: Previše kategotija!',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Jordi Roqué
  * @author SMP
  * @author Solde
@@ -196,7 +196,7 @@ $messages['ce'] = array(
 	'dplforum-toomany' => 'ХIорам DPL: ЧIогIа дукха кадегарш!',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
@@ -246,7 +246,7 @@ $messages['dsb'] = array(
 	'dplforum-toomany' => 'DPL-forum: Pśewjele kategorijow!',
 );
 
-/** Ewe (Eʋegbe)
+/** Ewe (eʋegbe)
  * @author Natsubee
  */
 $messages['ee'] = array(
@@ -279,7 +279,7 @@ $messages['eo'] = array(
 	'dplforum-toomany' => 'DPL-Forumo: Tro multaj da kategorioj!',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Ciencia Al Poder
  * @author Crazymadlover
  */
@@ -292,7 +292,7 @@ $messages['es'] = array(
 	'dplforum-toomany' => 'Foro DPL: demasiadas categorías!',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author Kobazulo
  */
 $messages['eu'] = array(
@@ -312,7 +312,7 @@ $messages['fa'] = array(
 	'dplforum-toomany' => 'تالار گفتگوی DPL: تعداد بیش از حد رده‌ها!',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author Tarmo
@@ -326,7 +326,7 @@ $messages['fi'] = array(
 	'dplforum-toomany' => 'DPL-forum: Liian paljon luokkia!',
 );
 
-/** French (Français)
+/** French (français)
  * @author Cedric31
  * @author Crochet.david
  * @author Grondin
@@ -342,7 +342,7 @@ $messages['fr'] = array(
 	'dplforum-toomany' => 'DPL Forum : trop de catégories !',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -413,7 +413,7 @@ $messages['hsb'] = array(
 	'dplforum-toomany' => 'Forum DPL: Přewjele kategorijow!',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Glanthor Reviol
  */
@@ -426,7 +426,7 @@ $messages['hu'] = array(
 	'dplforum-toomany' => 'DPL fórum: túl sok kategória!',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -455,7 +455,7 @@ $messages['ig'] = array(
 	'dplforum-never' => 'Anáobulạ',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
  */
@@ -529,7 +529,7 @@ $messages['lb'] = array(
 	'dplforum-toomany' => 'DPL Forum: Ze wéineg Kategorien!',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Vpovilaitis
  */
 $messages['lt'] = array(
@@ -541,7 +541,7 @@ $messages['lt'] = array(
 	'dplforum-toomany' => 'DPL Forumas: Per daug kategorijų!',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
@@ -561,7 +561,7 @@ $messages['mhr'] = array(
 	'dplforum-toomany' => 'DPL Каҥашымаш: пеш шуко категорий!',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -659,7 +659,7 @@ $messages['nl'] = array(
 	'dplforum-toomany' => 'DPL Forum: te veel categorieën!',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -673,7 +673,7 @@ $messages['nn'] = array(
 	'dplforum-toomany' => 'DPL-forum: For mange kategoriar!',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -692,7 +692,7 @@ $messages['pdc'] = array(
 	'dplforum-never' => 'Nie naett',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Leinad
  * @author McMonster
  * @author Sp5uhe
@@ -728,7 +728,7 @@ $messages['ps'] = array(
 	'dplforum-toomany' => 'DPL Forum: ګڼ شمېر وېشنيزې!',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Malafaya
  */
 $messages['pt'] = array(
@@ -740,7 +740,7 @@ $messages['pt'] = array(
 	'dplforum-toomany' => 'DPL Forum: Demasiadas categorias!',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
@@ -752,7 +752,7 @@ $messages['pt-br'] = array(
 	'dplforum-toomany' => 'DPL Forum: Categorias em excesso!',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  * @author Stelistcristi
  */
@@ -762,7 +762,7 @@ $messages['ro'] = array(
 	'dplforum-never' => 'Niciodată',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -774,7 +774,7 @@ $messages['roa-tara'] = array(
 	'dplforum-toomany' => 'Forum DPL: Le categorije sonde assaije proprie!',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Aleksandrit
  * @author Lockal
  * @author Александр Сигачёв
@@ -788,7 +788,7 @@ $messages['ru'] = array(
 	'dplforum-toomany' => 'Форум DPL: Слишком много категорий!',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -799,7 +799,7 @@ $messages['sah'] = array(
 	'dplforum-toomany' => 'DPL кэпсэтэр сирэ: Категорията наһаа элбэх!',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Melos
  * @author Santu
  */
@@ -812,7 +812,7 @@ $messages['scn'] = array(
 	'dplforum-toomany' => 'DPL Forum: Troppi catigurìi!',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -824,7 +824,7 @@ $messages['sk'] = array(
 	'dplforum-toomany' => 'DPL fórum: Príliš mnoho kategórií!',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Verlor
  * @author Михајло Анђелковић
@@ -837,7 +837,7 @@ $messages['sr-ec'] = array(
 	'dplforum-toomany' => 'DPL форум: превише категорија!',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -860,7 +860,7 @@ $messages['stq'] = array(
 	'dplforum-toomany' => 'DPL Forum: Tou fuul Kategorien!',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Lejonel
  * @author Najami
  */
@@ -894,7 +894,7 @@ $messages['te'] = array(
 	'dplforum-edited' => '- చివరి మార్పు',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -926,7 +926,7 @@ $messages['tr'] = array(
 	'dplforum-toomany' => 'DPL Forum: Çok fazla kategori!',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Aleksandrit
  * @author Alex Khimich
  */
@@ -939,7 +939,7 @@ $messages['uk'] = array(
 	'dplforum-toomany' => 'Форум DPL: Занадто багато категорій!',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -983,7 +983,7 @@ $messages['vo'] = array(
 	'dplforum-never' => 'Neai',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  * @author Wmr89502270
  */
@@ -996,7 +996,7 @@ $messages['zh-hans'] = array(
 	'dplforum-toomany' => 'DPL 论坛：太多类别！',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Liangent
  */
 $messages['zh-hant'] = array(
