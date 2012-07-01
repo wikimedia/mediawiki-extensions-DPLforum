@@ -108,7 +108,7 @@ $messages['az'] = array(
 	'dplforum-toomany' => 'Forum DPL: Kateqoriya sayı həddən artıq azdır!',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -234,7 +234,7 @@ $messages['de'] = array(
 	'dplforum-toomany' => 'DPL Forum: Zu viele Kategorien!',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -351,7 +351,7 @@ $messages['frp'] = array(
 	'dplforum-never' => 'Jamés',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -401,7 +401,7 @@ $messages['he'] = array(
 	'dplforum-toomany' => 'פורום DPL: יותר מדי קטגוריות!',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
