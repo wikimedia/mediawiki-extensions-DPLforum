@@ -184,7 +184,7 @@ $messages['ca'] = array(
 	'dplforum-toomany' => 'Fòrum DPL: massa categories!',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -548,7 +548,7 @@ $messages['ltg'] = array(
 	'dplforum-never' => 'Nikod',
 );
 
-/** Eastern Mari (Олык Марий)
+/** Eastern Mari (олык марий)
  * @author Azim
  * @author Сай
  */
@@ -610,7 +610,7 @@ $messages['ms'] = array(
 	'dplforum-toomany' => 'Forum DPL: Kategori terlalu banyak!',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -625,8 +625,7 @@ $messages['nah'] = array(
 	'dplforum-never' => 'Aīcmah',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -951,7 +950,7 @@ $messages['vec'] = array(
 	'dplforum-toomany' => 'DPL Forum: Massa categorie!',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
