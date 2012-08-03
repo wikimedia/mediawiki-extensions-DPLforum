@@ -234,6 +234,15 @@ $messages['de'] = array(
 	'dplforum-toomany' => 'DPL Forum: Zu viele Kategorien!',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'dplforum-by' => '$1 kerden ra',
+	'dplforum-edited' => '- Vurnayışo peyên',
+	'dplforum-never' => 'Qet',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
