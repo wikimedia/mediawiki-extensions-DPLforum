@@ -820,6 +820,13 @@ $messages['scn'] = array(
 	'dplforum-toomany' => 'DPL Forum: Troppi catigurìi!',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'dplforum-never' => 'කවදාවත් නෑ',
+);
+
 /** Slovak (slovenčina)
  * @author Helix84
  */
