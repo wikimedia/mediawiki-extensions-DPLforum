@@ -489,6 +489,14 @@ $messages['ja'] = array(
 	'dplforum-toomany' => 'DPL Forum: カテゴリが多すぎます！',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'dplforum-edited' => '- ბოლო რედაქტირება',
+	'dplforum-never' => 'არასდროს',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author T-Rithy
  * @author Thearith
