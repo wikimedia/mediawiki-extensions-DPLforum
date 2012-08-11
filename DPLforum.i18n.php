@@ -832,6 +832,7 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'dplforum-by' => '$1 විසින්',
 	'dplforum-never' => 'කවදාවත් නෑ',
 );
 
