@@ -479,14 +479,15 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author Shirayuki
  */
 $messages['ja'] = array(
-	'dplforum-desc' => 'DynamicPageList ベースのフォーラムを実現する拡張機能',
+	'dplforum-desc' => 'DPL (動的ページ一覧) ベースのフォーラムを実現する拡張機能',
 	'dplforum-by' => '$1 による',
 	'dplforum-edited' => '- 最終編集',
 	'dplforum-never' => '決してしない',
-	'dplforum-toofew' => 'DPL Forum: カテゴリが少なすぎます！',
-	'dplforum-toomany' => 'DPL Forum: カテゴリが多すぎます！',
+	'dplforum-toofew' => 'DPL フォーラム: カテゴリが少なすぎます!',
+	'dplforum-toomany' => 'DPL フォーラム: カテゴリが多すぎます!',
 );
 
 /** Georgian (ქართული)
