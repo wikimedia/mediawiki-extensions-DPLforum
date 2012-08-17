@@ -964,6 +964,13 @@ $messages['uk'] = array(
 	'dplforum-toomany' => 'Форум DPL: Занадто багато категорій!',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'dplforum-never' => 'کبھی نہیں',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
