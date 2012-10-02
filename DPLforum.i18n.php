@@ -108,7 +108,7 @@ $messages['az'] = array(
 	'dplforum-toomany' => 'Forum DPL: Kateqoriya sayı həddən artıq azdır!',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -368,8 +368,8 @@ $messages['gl'] = array(
 	'dplforum-by' => 'por $1',
 	'dplforum-edited' => '- Última edición',
 	'dplforum-never' => 'Nunca',
-	'dplforum-toofew' => 'Foro DPL: moi poucas categorías!',
-	'dplforum-toomany' => 'Foro DPL: demasiadas categorías!',
+	'dplforum-toofew' => 'Foro DPL: Moi poucas categorías!',
+	'dplforum-toomany' => 'Foro DPL: Demasiadas categorías!',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -643,7 +643,7 @@ $messages['nah'] = array(
 	'dplforum-never' => 'Aīcmah',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -676,7 +676,7 @@ $messages['nl'] = array(
 	'dplforum-toomany' => 'DPL Forum: te veel categorieën!',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
@@ -849,7 +849,7 @@ $messages['sk'] = array(
 	'dplforum-toomany' => 'DPL fórum: Príliš mnoho kategórií!',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Verlor
  * @author Михајло Анђелковић
@@ -862,7 +862,7 @@ $messages['sr-ec'] = array(
 	'dplforum-toomany' => 'DPL форум: превише категорија!',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1015,7 +1015,7 @@ $messages['vo'] = array(
 	'dplforum-never' => 'Neai',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  * @author Wmr89502270
  */
@@ -1028,7 +1028,7 @@ $messages['zh-hans'] = array(
 	'dplforum-toomany' => 'DPL 论坛：太多类别！',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
  */
 $messages['zh-hant'] = array(
