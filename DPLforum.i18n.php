@@ -1039,4 +1039,3 @@ $messages['zh-hant'] = array(
 	'dplforum-toofew' => 'DPL 論壇：太少類別！',
 	'dplforum-toomany' => 'DPL 論壇：太多類別！',
 );
-
