@@ -301,6 +301,14 @@ $messages['es'] = array(
 	'dplforum-toomany' => 'Foro DPL: demasiadas categorías!',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'dplforum-edited' => '- Viimati muudetud',
+	'dplforum-never' => 'Mitte kunagi',
+);
+
 /** Basque (euskara)
  * @author Kobazulo
  */
