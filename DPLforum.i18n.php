@@ -220,6 +220,13 @@ $messages['cy'] = array(
 	'dplforum-toomany' => 'Fforwm DPL: Gormod o gategorïau!',
 );
 
+/** Danish (dansk)
+ * @author Tjernobyl
+ */
+$messages['da'] = array(
+	'dplforum-never' => 'Aldrig',
+);
+
 /** German (Deutsch)
  * @author ChrisiPK
  * @author Leithian
@@ -472,6 +479,13 @@ $messages['ig'] = array(
 	'dplforum-never' => 'Anáobulạ',
 );
 
+/** Icelandic (íslenska)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['is'] = array(
+	'dplforum-never' => 'Aldrei',
+);
+
 /** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
@@ -634,6 +648,13 @@ $messages['ms'] = array(
 	'dplforum-never' => 'Tiada',
 	'dplforum-toofew' => 'Forum DPL: Kategori terlalu sedikit!',
 	'dplforum-toomany' => 'Forum DPL: Kategori terlalu banyak!',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'dplforum-never' => 'Qatt',
 );
 
 /** Erzya (эрзянь)
