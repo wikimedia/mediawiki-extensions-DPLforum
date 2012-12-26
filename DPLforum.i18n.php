@@ -312,6 +312,7 @@ $messages['es'] = array(
  * @author Avjoska
  */
 $messages['et'] = array(
+	'dplforum-by' => '$1 poolt',
 	'dplforum-edited' => '- Viimati muudetud',
 	'dplforum-never' => 'Mitte kunagi',
 );
@@ -863,6 +864,7 @@ $messages['scn'] = array(
  */
 $messages['si'] = array(
 	'dplforum-by' => '$1 විසින්',
+	'dplforum-edited' => '- අවසන් වරට සංස්කරණය කලේ',
 	'dplforum-never' => 'කවදාවත් නෑ',
 );
 
