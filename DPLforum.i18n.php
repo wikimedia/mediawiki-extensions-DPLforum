@@ -108,6 +108,13 @@ $messages['az'] = array(
 	'dplforum-toomany' => 'Forum DPL: Kateqoriya sayı həddən artıq azdır!',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['azb'] = array(
+	'dplforum-never' => 'هئچ واخت',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
@@ -863,9 +870,12 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'dplforum-desc' => 'DPL-පාදක විනිශ්චයශාලා ව්‍යාප්තිය',
 	'dplforum-by' => '$1 විසින්',
 	'dplforum-edited' => '- අවසන් වරට සංස්කරණය කලේ',
 	'dplforum-never' => 'කවදාවත් නෑ',
+	'dplforum-toofew' => 'DPL විනිශ්චයශාලාව: ස්වල්ප ප්‍රවර්ගයන් ගොඩයි!',
+	'dplforum-toomany' => 'DPL විනිශ්චයශාලාව: ප්‍රවර්ගයන් ගොඩයි!',
 );
 
 /** Slovak (slovenčina)
