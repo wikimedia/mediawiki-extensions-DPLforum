@@ -433,6 +433,13 @@ $messages['he'] = array(
 	'dplforum-toomany' => 'פורום DPL: יותר מדי קטגוריות!',
 );
 
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'dplforum-never' => 'कभी नहीं',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
