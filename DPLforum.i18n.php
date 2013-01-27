@@ -489,7 +489,8 @@ $messages['id'] = array(
 	'dplforum-toomany' => 'Forum DPL: Terlalu banyak kategori!',
 );
 
-/** Igbo (Igbo) */
+/** Igbo (Igbo)
+ */
 $messages['ig'] = array(
 	'dplforum-never' => 'Anáobulạ',
 );
@@ -946,7 +947,8 @@ $messages['sv'] = array(
 	'dplforum-toomany' => 'DPL-forum: För många kategorier!',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ */
 $messages['sw'] = array(
 	'dplforum-never' => 'Kamwe',
 );
