@@ -532,6 +532,7 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'dplforum-by' => 'მომხმარებლისაგან $1',
 	'dplforum-edited' => '- ბოლო რედაქტირება',
 	'dplforum-never' => 'არასდროს',
 );
