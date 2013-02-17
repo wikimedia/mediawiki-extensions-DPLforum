@@ -25,20 +25,20 @@ $messages['en'] = array(
  * @author Jon Harald Søby
  * @author Lloffiwr
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'dplforum-desc' => 'Short description of the [http://www.mediawiki.org/wiki/Extension:DPLforum DPLforum extension], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.',
-	'dplforum-by' => 'Part of the [http://www.mediawiki.org/wiki/Extension:DPLforum DPLforum extension]. DPL stands for Dynamic Page Listing.
+	'dplforum-desc' => 'Short description of the [[mw:Extension:DPLforum|DPLforum extension]], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.',
+	'dplforum-by' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.
 
 * $1 is a username',
-	'dplforum-edited' => 'Part of the [http://www.mediawiki.org/wiki/Extension:DPLforum DPLforum extension]. DPL stands for Dynamic Page Listing.',
-	'dplforum-never' => 'Part of the [http://www.mediawiki.org/wiki/Extension:DPLforum DPLforum extension]. DPL stands for Dynamic Page Listing.
-
+	'dplforum-edited' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.',
+	'dplforum-never' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.
 {{Identical|Never}}',
-	'dplforum-toofew' => 'Part of the [http://www.mediawiki.org/wiki/Extension:DPLforum DPLforum extension]. DPL stands for Dynamic Page Listing.',
-	'dplforum-toomany' => 'Part of the [http://www.mediawiki.org/wiki/Extension:DPLforum DPLforum extension]. DPL stands for Dynamic Page Listing.',
+	'dplforum-toofew' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.',
+	'dplforum-toomany' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.',
 );
 
 /** Afrikaans (Afrikaans)
