@@ -193,9 +193,10 @@ $messages['ca'] = array(
 
 /** Chechen (нохчийн)
  * @author Sasan700
+ * @author Умар
  */
 $messages['ce'] = array(
-	'dplforum-desc' => 'Хlорам шорйеш, дукхах йерг DPL',
+	'dplforum-desc' => 'Форум шорйеш, дукхах йерг DPL',
 	'dplforum-by' => 'кху $1',
 	'dplforum-edited' => '— тlаьххьара нисдар',
 	'dplforum-never' => 'Цкъа а',
