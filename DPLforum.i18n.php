@@ -479,12 +479,13 @@ $messages['ia'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Iwan Novirion
  * @author Rex
  */
 $messages['id'] = array(
 	'dplforum-desc' => 'Ekstensi forum berbasis-DPL',
 	'dplforum-by' => 'oleh $1',
-	'dplforum-edited' => '- Terakhir disunting',
+	'dplforum-edited' => '- Suntingan terakhir',
 	'dplforum-never' => 'Tidak pernah',
 	'dplforum-toofew' => 'Forum DPL: Terlalu sedikit kategori!',
 	'dplforum-toomany' => 'Forum DPL: Terlalu banyak kategori!',
@@ -617,6 +618,13 @@ $messages['mhr'] = array(
 	'dplforum-never' => 'Нигунам',
 	'dplforum-toofew' => 'DPL Каҥашымаш: пеш шагал категорий!',
 	'dplforum-toomany' => 'DPL Каҥашымаш: пеш шуко категорий!',
+);
+
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'dplforum-edited' => '- Suntiangan tarakhia',
 );
 
 /** Macedonian (македонски)
