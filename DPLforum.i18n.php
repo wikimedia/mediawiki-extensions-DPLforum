@@ -200,8 +200,8 @@ $messages['ce'] = array(
 	'dplforum-by' => 'кху $1',
 	'dplforum-edited' => '— тlаьххьара нисдар',
 	'dplforum-never' => 'Цкъа а',
-	'dplforum-toofew' => 'ХIорам DPL: ЧIогIа кIезиг кадегарш!',
-	'dplforum-toomany' => 'ХIорам DPL: ЧIогIа дукха кадегарш!',
+	'dplforum-toofew' => 'ХIорам DPL: ЧIогIа кIезиг категореш!',
+	'dplforum-toomany' => 'ХIорам DPL: ЧIогIа дукха категореш!',
 );
 
 /** Czech (česky)
