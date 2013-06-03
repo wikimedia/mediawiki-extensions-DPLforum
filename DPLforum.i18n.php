@@ -698,7 +698,7 @@ $messages['nah'] = array(
 	'dplforum-never' => 'Aīcmah',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Laaknor
  */
 $messages['nb'] = array(
@@ -731,7 +731,7 @@ $messages['nl'] = array(
 	'dplforum-toomany' => 'DPL Forum: te veel categorieën!',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  * @author Harald Khan
  * @author Njardarlogar
