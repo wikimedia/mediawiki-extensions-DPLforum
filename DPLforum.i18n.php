@@ -96,6 +96,18 @@ $messages['arz'] = array(
 	'dplforum-toomany' => 'منتدى DPL: تصنيفات كثيرة جدا!',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'dplforum-desc' => 'Estensión de foru basada en DPL',
+	'dplforum-by' => 'por $1',
+	'dplforum-edited' => '- Última edición',
+	'dplforum-never' => 'Nunca',
+	'dplforum-toofew' => 'Foru DPL: ¡Mui poques categoríes!',
+	'dplforum-toomany' => 'Foru DPL: ¡Demasiaes categoríes!',
+);
+
 /** Azerbaijani (azərbaycanca)
  * @author Sortilegus
  */
