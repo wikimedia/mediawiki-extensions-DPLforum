@@ -63,6 +63,12 @@ class DPLForum {
 	var $sCreationDateFormat;
 	var $sLastEditFormat;
 
+	/**
+	 * @param Parser $parser
+	 * @param string $name
+	 *
+	 * @return Title[]
+	 */
 	function cat( &$parser, $name ) {
 		$cats = array();
 		if ( preg_match_all( "/^\s*$name\s*=\s*(.*)/mi", $this->sInput, $matches ) ) {
@@ -76,6 +82,13 @@ class DPLForum {
 		return $cats;
 	}
 
+	/**
+	 * @param string $name
+	 * @param int|null $value
+	 * @param Parser|null $parser
+	 *
+	 * @return int|null|string
+	 */
 	function get( $name, $value = null, $parser = null ) {
 		if ( preg_match( "/^\s*$name\s*=\s*(.*)/mi", $this->sInput, $matches ) ) {
 			$arg = trim( $matches[1] );
@@ -90,6 +103,14 @@ class DPLForum {
 		return $value;
 	}
 
+	/**
+	 * @param Parser $parser
+	 * @param int $count
+	 * @param string $page
+	 * @param string $text
+	 *
+	 * @return string
+	 */
 	function link( &$parser, $count, $page = '', $text = '' ) {
 		$count = intval( $count );
 		if ( $count < 1 ) {
@@ -125,6 +146,12 @@ class DPLForum {
 		return '[' . $parser->replaceVariables( '{{fullurl:{{FULLPAGENAME}}|offset=' . $page . '}} ' ) . $text . ']';
 	}
 
+	/**
+	 * @param $page
+	 * @param $cond
+	 *
+	 * @return bool
+	 */
 	function link_test( $page, $cond ) {
 		if ( preg_match( "/\\d+(\\D+)(\\d+)/", $cond, $m ) ) {
 			$m[1] = strtr( $m[1], array( ( '&l' . 't;' ) => '<', ( '&g' . 't;' ) => '>' ) );
@@ -143,6 +170,12 @@ class DPLForum {
 		return ( $page < 0 );
 	}
 
+	/**
+	 * @param string $type
+	 * @param mixed $error
+	 *
+	 * @return string
+	 */
 	function msg( $type, $error = null ) {
 		if ( $error && ( $this->get( 'suppresserrors' ) == 'true' ) ) {
 			return '';
@@ -151,6 +184,13 @@ class DPLForum {
 		return htmlspecialchars( wfMsg( $type ) );
 	}
 
+	/**
+	 * @param string $ts
+	 * @param string $type
+	 * @param bool $df
+	 *
+	 * @return string
+	 */
 	function date( $ts, $type = 'date', $df = false ) { // based on Language::date()
 		global $wgLang;
 		$ts = wfTimestamp( TS_MW, $ts );
@@ -161,6 +201,12 @@ class DPLForum {
 		return $wgLang->sprintfDate( $df, $ts );
 	}
 
+	/**
+	 * @param $input
+	 * @param Parser $parser
+	 *
+	 * @return string
+	 */
 	function parse( &$input, &$parser ) {
 		global $wgContLang;
 
@@ -364,13 +410,15 @@ class DPLForum {
 			intval( $this->get( 'newdays', 7 ) * 86400 ) );
 
 		if ( $bCountMode ) {
-			if ( $row = $dbr->fetchObject( $res ) ) {
+			$row = $dbr->fetchObject( $res );
+			if ( $row ) {
 				$output .= $row->num_rows;
 			} else {
 				$output .= '0';
 			}
 		} elseif ( is_null( $title ) ) {
-			while ( $row = $dbr->fetchObject( $res ) ) {
+			$row = $dbr->fetchObject( $res );
+			while ( $row ) {
 				if( isset( $row->first_time ) ) {
 					$first_time = $row->first_time;
 				} else {
@@ -391,7 +439,8 @@ class DPLForum {
 			}
 		} else {
 			$output .= $sStartItem;
-			if ( $row = $dbr->fetchObject( $res ) ) {
+			$row = $dbr->fetchObject( $res );
+			if ( $row ) {
 				$output .= $this->buildOutput( Title::makeTitle( $row->page_namespace,
 					$row->page_title ), $title, $row->rev_timestamp, $row->rev_user_text );
 			} else {
@@ -402,12 +451,21 @@ class DPLForum {
 		return $output;
 	}
 
-	// Generates a single line of output.
+	/**
+	 * Generates a single line of output.
+	 *
+	 * @param $page
+	 * @param Title $title
+	 * @param $time
+	 * @param string $user
+	 * @param string $author
+	 * @param string $made
+	 *
+	 * @return string
+	 */
 	function buildOutput( $page, $title, $time, $user = '', $author = '', $made = '' ) {
-		global $wgUser;
-
-		$sk = $wgUser->getSkin();
-		$tm =& $this->bTableMode;
+		$skin = RequestContext::getMain()->getSkin();
+		$tableMode =& $this->bTableMode;
 		$output = '';
 
 		if ( $this->bAddCreationDate ) {
@@ -417,28 +475,26 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory && !$this->bAddLastEdit ) {
 				if ( $this->bEmbedHistory ) {
-					$made = $sk->makeKnownLinkObj( $page, $made, 'action=history' );
+					$made = $skin->makeKnownLinkObj( $page, $made, 'action=history' );
 				} else {
-					$made .= ' (' . $sk->makeKnownLinkObj( $page,
+					$made .= ' (' . $skin->makeKnownLinkObj( $page,
 						wfMsg( 'hist' ), 'action=history' ) . ')';
 				}
 			}
 
-			if ( $tm ) {
+			if ( $tableMode ) {
 				$output .= "<td class='forum_created'>$made</td>";
 			} elseif ( $made ) {
 				$output = "{$made}: ";
 			}
 		}
 
-		if ( $tm ) {
+		if ( $tableMode ) {
 			$output .= '<td class="forum_title">';
 		}
 
-		$text = $query = $props = '';
-
 		if ( $this->bShowNamespace == true ) {
-			$text = $title->getEscapedText();
+			$text = htmlspecialchars( $title->getPrefixedText() );
 		} else {
 			$text = htmlspecialchars( $title->getText() );
 		}
@@ -457,17 +513,17 @@ class DPLForum {
 			}
 		}
 
-		$output .= $sk->makeKnownLinkObj( $title, $text, $query, '', '', $props );
+		$output .= $skin->makeKnownLinkObj( $title, $text, $query, '', '', $props );
 		$text = '';
 
 		if ( $this->bAddAuthor ) {
 			$author = Title::newFromText( $author, NS_USER );
 
 			if ( $author ) {
-				$author = $sk->makeKnownLinkObj( $author, $author->getText() );
+				$author = $skin->makeKnownLinkObj( $author, $author->getText() );
 			}
 
-			if ( $tm ) {
+			if ( $tableMode ) {
 				if ( $this->bCompactAuthor ) {
 					if ( $author ) {
 						$byAuthor = wfMsg( 'word-separator' ) . wfMsgHtml( 'dplforum-by', $author );
@@ -491,14 +547,14 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory ) {
 				if ( $this->bEmbedHistory ) {
-					$time = $sk->makeKnownLinkObj( $page, $time, 'action=history' );
+					$time = $skin->makeKnownLinkObj( $page, $time, 'action=history' );
 				} else {
-					$time .= ' (' . $sk->makeKnownLinkObj( $page,
+					$time .= ' (' . $skin->makeKnownLinkObj( $page,
 						wfMsg( 'hist' ), 'action=history' ) . ')';
 				}
 			}
 
-			if ( $tm ) {
+			if ( $tableMode ) {
 				$output .= "</td><td class='forum_edited'>$time";
 			} else {
 				$text .= "$time ";
@@ -509,10 +565,10 @@ class DPLForum {
 			$user = Title::newFromText( $user, NS_USER );
 
 			if ( $user ) {
-				$user = $sk->makeKnownLinkObj( $user, $user->getText() );
+				$user = $skin->makeKnownLinkObj( $user, $user->getText() );
 			}
 
-			if ( $tm ) {
+			if ( $tableMode ) {
 				if ( $this->bCompactEdit ) {
 					if ( $user ) {
 						$byUser = wfMsgHtml( 'dplforum-by', $user );
@@ -529,7 +585,7 @@ class DPLForum {
 			}
 		}
 
-		if ( $tm ) {
+		if ( $tableMode ) {
 			$output .= '</td>';
 		} elseif ( $text ) {
 			$output .= wfMsg( 'word-separator' ) . $this->msg( 'dplforum-edited' ) . " $text";

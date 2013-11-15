@@ -60,6 +60,10 @@ $wgExtensionMessagesFiles['DPLforumMagic'] = $dir . 'DPLforum.i18n.magic.php';
 $wgExtensionMessagesFiles['DPLforumNamespaces'] = $dir . 'DPLforum.namespaces.php';
 $wgAutoloadClasses['DPLForum'] = $dir . 'DPLforum_body.php';
 
+/**
+ * @param Parser $parser
+ * @return bool
+ */
 function wfDPLinit( &$parser ) {
 	$parser->setHook( 'forum', 'parseForum' );
 	$parser->setFunctionHook( 'forumlink', array( new DPLForum(), 'link' ) );
@@ -74,9 +78,9 @@ function parseForum( $input, $argv, $parser ) {
 /**
  * Register the canonical names for our namespace and its talkspace.
  *
- * @param $list Array: array of namespace numbers with corresponding
+ * @param array $list array of namespace numbers with corresponding
  *                     canonical names
- * @return Boolean: true
+ * @return bool true
  */
 function wfDPLforumCanonicalNamespaces( &$list ) {
 	$list[NS_FORUM] = 'Forum';
