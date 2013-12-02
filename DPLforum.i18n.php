@@ -33,7 +33,9 @@ $messages['qqq'] = array(
 	'dplforum-desc' => 'Short description of the [[mw:Extension:DPLforum|DPLforum extension]], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.',
 	'dplforum-by' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.
 
-* $1 is a username',
+Parameters:
+* $1 - a username
+{{Identical|By}}',
 	'dplforum-edited' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.',
 	'dplforum-never' => 'Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.
 {{Identical|Never}}',
