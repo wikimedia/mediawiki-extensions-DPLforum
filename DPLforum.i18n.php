@@ -218,7 +218,7 @@ $messages['ce'] = array(
 	'dplforum-toomany' => 'ХIорам DPL: ЧIогIа дукха категореш!',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
