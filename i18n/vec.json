@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Candalua"
+        ]
+    },
+    "dplforum-desc": "Estension forum basà su DPL",
+    "dplforum-by": "da $1",
+    "dplforum-edited": " - Modifegà l'ultima òlta",
+    "dplforum-never": "Mai",
+    "dplforum-toofew": "DPL Forum: Massa poche categorie!",
+    "dplforum-toomany": "DPL Forum: Massa categorie!"
+}

@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Melos",
+            "Santu"
+        ]
+    },
+    "dplforum-desc": "Estenzioni forum basata sù DPL",
+    "dplforum-by": "di $1",
+    "dplforum-edited": "- Mudificatu ùrtima vota",
+    "dplforum-never": "Mai",
+    "dplforum-toofew": "DPL Forum: Troppi picca catigurìi!",
+    "dplforum-toomany": "DPL Forum: Troppi catigurìi!"
+}

@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Sortilegus"
+        ]
+    },
+    "dplforum-desc": "DPL-ə əsaslanan forum genişlənməsi",
+    "dplforum-by": "$1-dən",
+    "dplforum-edited": "Sonuncu redaktə",
+    "dplforum-never": "Heç vaxt",
+    "dplforum-toofew": "Forum DPL: Kateqoriya sayı həddən artıq çoxdur!",
+    "dplforum-toomany": "Forum DPL: Kateqoriya sayı həddən artıq azdır!"
+}

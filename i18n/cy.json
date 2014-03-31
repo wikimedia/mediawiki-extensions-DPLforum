@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Lloffiwr"
+        ]
+    },
+    "dplforum-desc": "Estyniad ar gyfer fforwm gan ddefnyddio DPL (rhestru tudalennau'n ddeinamig)",
+    "dplforum-by": "gan $1",
+    "dplforum-edited": "- Golygiad diweddaraf",
+    "dplforum-never": "Byth",
+    "dplforum-toofew": "Fforwm DPL: Dim digon o gategorïau!",
+    "dplforum-toomany": "Fforwm DPL: Gormod o gategorïau!"
+}

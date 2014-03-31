@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Jordi Roqué",
+            "SMP",
+            "Solde",
+            "Ssola",
+            "Toniher"
+        ]
+    },
+    "dplforum-desc": "Extensió per un fòrum basat en DPL",
+    "dplforum-by": "per $1",
+    "dplforum-edited": "- Darrera modificació",
+    "dplforum-never": "Mai",
+    "dplforum-toofew": "Fòrum DPL: massa poques categories!",
+    "dplforum-toomany": "Fòrum DPL: massa categories!"
+}

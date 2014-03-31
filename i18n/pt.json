@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Malafaya"
+        ]
+    },
+    "dplforum-desc": "Extensão de fórum baseada em DPL",
+    "dplforum-by": "por $1",
+    "dplforum-edited": "- Última edição",
+    "dplforum-never": "Nunca",
+    "dplforum-toofew": "DPL Forum: Categorias em número insuficiente!",
+    "dplforum-toomany": "DPL Forum: Demasiadas categorias!"
+}

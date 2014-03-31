@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Lejonel",
+            "Najami"
+        ]
+    },
+    "dplforum-desc": "Forumtillägg baserat på DPL",
+    "dplforum-by": "av $1",
+    "dplforum-edited": "- senast ändrad",
+    "dplforum-never": "Aldrig",
+    "dplforum-toofew": "DPL-forum: För få kategorier!",
+    "dplforum-toomany": "DPL-forum: För många kategorier!"
+}

@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Helix84"
+        ]
+    },
+    "dplforum-desc": "Rozšírenie DPL fórum",
+    "dplforum-by": "napísal $1",
+    "dplforum-edited": "- posledná úprava",
+    "dplforum-never": "Nikdy",
+    "dplforum-toofew": "DPL fórum: Príliš málo kategórií!",
+    "dplforum-toomany": "DPL fórum: Príliš mnoho kategórií!"
+}

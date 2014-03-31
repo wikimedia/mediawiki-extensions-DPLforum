@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matěj Grabovský"
+        ]
+    },
+    "dplforum-desc": "Rozšíření DPL fórum",
+    "dplforum-by": "napsal $1",
+    "dplforum-edited": "- poslední úprava",
+    "dplforum-never": "Nikdy",
+    "dplforum-toofew": "DPL fórum: Příliš málo kategorií!",
+    "dplforum-toomany": "DPL fórum: Příliš mnoho kategorií!"
+}

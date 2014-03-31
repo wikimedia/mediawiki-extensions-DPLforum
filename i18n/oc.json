@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cedric31"
+        ]
+    },
+    "dplforum-desc": "DPL basada sus l’extension fòrum",
+    "dplforum-by": "per $1",
+    "dplforum-edited": "- Darrièr cambiament",
+    "dplforum-never": "Pas jamai",
+    "dplforum-toofew": "DPL Forum : Pas pro de categorias !",
+    "dplforum-toomany": "DPL Forum : Tròp de categorias !"
+}

@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Xuacu"
+        ]
+    },
+    "dplforum-desc": "Estensión de foru basada en DPL",
+    "dplforum-by": "por $1",
+    "dplforum-edited": "- Última edición",
+    "dplforum-never": "Nunca",
+    "dplforum-toofew": "Foru DPL: ¡Mui poques categoríes!",
+    "dplforum-toomany": "Foru DPL: ¡Demasiaes categoríes!"
+}

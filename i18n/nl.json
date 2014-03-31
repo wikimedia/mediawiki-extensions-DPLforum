@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "SPQRobin",
+            "Siebrand"
+        ]
+    },
+    "dplforum-desc": "Forumuitbreiding gebaseerd op DPL",
+    "dplforum-by": "door $1",
+    "dplforum-edited": "- Laatste bewerking",
+    "dplforum-never": "Nooit",
+    "dplforum-toofew": "DPL Forum: te weinig categorieën!",
+    "dplforum-toomany": "DPL Forum: te veel categorieën!"
+}

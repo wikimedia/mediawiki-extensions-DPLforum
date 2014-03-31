@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ross McClure"
+        ]
+    },
+    "dplforum-desc": "DPL-based forum extension",
+    "dplforum-by": "by $1",
+    "dplforum-edited": "- Last edited",
+    "dplforum-never": "Never",
+    "dplforum-toofew": "DPL Forum: Too few categories!",
+    "dplforum-toomany": "DPL Forum: Too many categories!"
+}

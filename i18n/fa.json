@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "BlueDevil",
+            "Huji"
+        ]
+    },
+    "dplforum-desc": "افزونهٔ تالار گفتگو مبتنی بر DPL",
+    "dplforum-by": "توسط $1",
+    "dplforum-edited": "- آخرین ویرایش",
+    "dplforum-never": "هرگز",
+    "dplforum-toofew": "تالار گفتگوی DPL: تعداد ناکافی رده‌ها!",
+    "dplforum-toomany": "تالار گفتگوی DPL: تعداد بیش از حد رده‌ها!"
+}

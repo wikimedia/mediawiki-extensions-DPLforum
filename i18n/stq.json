@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Pyt"
+        ]
+    },
+    "dplforum-desc": "DPL-basierde Forumsärwiederenge",
+    "dplforum-by": "truch $1",
+    "dplforum-edited": "- Toulääst beoarbaided",
+    "dplforum-never": "Sieläärge nit",
+    "dplforum-toofew": "DPL Forum: Tou min Kategorien!",
+    "dplforum-toomany": "DPL Forum: Tou fuul Kategorien!"
+}

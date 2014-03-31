@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Consta",
+            "Omnipaedista",
+            "ZaDiak"
+        ]
+    },
+    "dplforum-desc": "Επέκταση DPL-based φόρουμ",
+    "dplforum-by": "από $1",
+    "dplforum-edited": "- Τελευταία επεξεργασμένη",
+    "dplforum-never": "Ποτέ",
+    "dplforum-toofew": "DPL Φόρουμ: Πολύ λίγες κατηγορίες!",
+    "dplforum-toomany": "DPL Φόρουμ: Πάρα πολλές κατηγορίες!"
+}

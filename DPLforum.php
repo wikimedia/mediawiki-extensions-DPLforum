@@ -32,7 +32,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'DPLforum',
 	'author' => 'Ross McClure',
-	'version' => '3.4.0',
+	'version' => '3.5.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:DPLforum',
 	'descriptionmsg' => 'dplforum-desc',
 );
@@ -47,6 +47,7 @@ $wgHooks['CanonicalNamespaces'][] = 'wfDPLforumCanonicalNamespaces';
 
 // Set up i18n and autoload the main class
 $dir = dirname( __FILE__ ) . '/';
+$wgMessagesDirs['DPLforum'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['DPLforum'] = $dir . 'DPLforum.i18n.php';
 $wgExtensionMessagesFiles['DPLforumMagic'] = $dir . 'DPLforum.i18n.magic.php';
 $wgExtensionMessagesFiles['DPLforumNamespaces'] = $dir . 'DPLforum.namespaces.php';

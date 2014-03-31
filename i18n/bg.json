@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "DCLXVI"
+        ]
+    },
+    "dplforum-desc": "DPL-базирано форумно разширение",
+    "dplforum-by": "от $1",
+    "dplforum-never": "Никога",
+    "dplforum-toofew": "DPL Форум: Твърде малко категории!",
+    "dplforum-toomany": "DPL Форум: Твърде много категории!"
+}

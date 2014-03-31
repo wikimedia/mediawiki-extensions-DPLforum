@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Liangent"
+        ]
+    },
+    "dplforum-desc": "基於 DPL 論壇推廣",
+    "dplforum-by": "由 $1",
+    "dplforum-edited": "- 最後編輯",
+    "dplforum-never": "從不",
+    "dplforum-toofew": "DPL 論壇：太少類別！",
+    "dplforum-toomany": "DPL 論壇：太多類別！"
+}
