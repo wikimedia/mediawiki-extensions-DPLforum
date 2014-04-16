@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Anakmalaysia",
-            "Aviator"
-        ]
-    },
-    "dplforum-desc": "penyambung forum berdasarkan DPL",
-    "dplforum-by": "oleh $1",
-    "dplforum-edited": "- Suntingan terakhir",
-    "dplforum-never": "Tiada",
-    "dplforum-toofew": "Forum DPL: Kategori terlalu sedikit!",
-    "dplforum-toomany": "Forum DPL: Kategori terlalu banyak!"
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Aviator"
+		]
+	},
+	"dplforum-desc": "penyambung forum berdasarkan DPL",
+	"dplforum-by": "oleh $1",
+	"dplforum-edited": "- Suntingan terakhir",
+	"dplforum-never": "Tiada",
+	"dplforum-toofew": "Forum DPL: Kategori terlalu sedikit!",
+	"dplforum-toomany": "Forum DPL: Kategori terlalu banyak!"
 }

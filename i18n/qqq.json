@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Darth Kule",
-            "Jon Harald Søby",
-            "Lloffiwr",
-            "Purodha",
-            "Shirayuki",
-            "Siebrand",
-            "The Evil IP address"
-        ]
-    },
-    "dplforum-desc": "Short description of the [[mw:Extension:DPLforum|DPLforum extension]], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.",
-    "dplforum-by": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n\nParameters:\n* $1 - a username\n{{Identical|By}}",
-    "dplforum-edited": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.",
-    "dplforum-never": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n{{Identical|Never}}",
-    "dplforum-toofew": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.",
-    "dplforum-toomany": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing."
+	"@metadata": {
+		"authors": [
+			"Darth Kule",
+			"Jon Harald Søby",
+			"Lloffiwr",
+			"Purodha",
+			"Shirayuki",
+			"Siebrand",
+			"The Evil IP address"
+		]
+	},
+	"dplforum-desc": "Short description of the [[mw:Extension:DPLforum|DPLforum extension]], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.",
+	"dplforum-by": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n\nParameters:\n* $1 - a username\n{{Identical|By}}",
+	"dplforum-edited": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.",
+	"dplforum-never": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n{{Identical|Never}}",
+	"dplforum-toofew": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.",
+	"dplforum-toomany": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing."
 }

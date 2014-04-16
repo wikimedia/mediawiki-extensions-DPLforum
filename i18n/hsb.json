@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "dplforum-desc": "Forumowe rozšěrjenje na zakładźe DPL",
-    "dplforum-by": "přez $1",
-    "dplforum-edited": "- Posledni raz wobdźěłany",
-    "dplforum-never": "Ženje",
-    "dplforum-toofew": "Forum DPL: Přemało kategorijow!",
-    "dplforum-toomany": "Forum DPL: Přewjele kategorijow!"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"dplforum-desc": "Forumowe rozšěrjenje na zakładźe DPL",
+	"dplforum-by": "přez $1",
+	"dplforum-edited": "- Posledni raz wobdźěłany",
+	"dplforum-never": "Ženje",
+	"dplforum-toofew": "Forum DPL: Přemało kategorijow!",
+	"dplforum-toomany": "Forum DPL: Přewjele kategorijow!"
 }

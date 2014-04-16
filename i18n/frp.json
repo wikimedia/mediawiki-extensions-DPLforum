@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisPtDe"
-        ]
-    },
-    "dplforum-by": "per $1",
-    "dplforum-edited": "- Dèrriér changement",
-    "dplforum-never": "Jamés"
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"dplforum-by": "per $1",
+	"dplforum-edited": "- Dèrriér changement",
+	"dplforum-never": "Jamés"
 }

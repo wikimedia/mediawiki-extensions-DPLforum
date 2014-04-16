@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joseph",
-            "Karduelis"
-        ]
-    },
-    "dplforum-desc": "DPL-temelli forum eklentisi",
-    "dplforum-by": "$1 tarafından",
-    "dplforum-edited": "- Son değiştirme",
-    "dplforum-never": "Asla",
-    "dplforum-toofew": "DPL Forum: Çok az kategori!",
-    "dplforum-toomany": "DPL Forum: Çok fazla kategori!"
+	"@metadata": {
+		"authors": [
+			"Joseph",
+			"Karduelis"
+		]
+	},
+	"dplforum-desc": "DPL-temelli forum eklentisi",
+	"dplforum-by": "$1 tarafından",
+	"dplforum-edited": "- Son değiştirme",
+	"dplforum-never": "Asla",
+	"dplforum-toofew": "DPL Forum: Çok az kategori!",
+	"dplforum-toomany": "DPL Forum: Çok fazla kategori!"
 }

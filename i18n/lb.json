@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Robby"
-        ]
-    },
-    "dplforum-desc": "DPL-baséiert Forumerweiderungen",
-    "dplforum-by": "vum $1",
-    "dplforum-edited": "- Vir d'läscht geännert",
-    "dplforum-never": "Ni",
-    "dplforum-toofew": "DPL Forum: Ze wéineg Kategorien!",
-    "dplforum-toomany": "DPL Forum: Ze wéineg Kategorien!"
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"dplforum-desc": "DPL-baséiert Forumerweiderungen",
+	"dplforum-by": "vum $1",
+	"dplforum-edited": "- Vir d'läscht geännert",
+	"dplforum-never": "Ni",
+	"dplforum-toofew": "DPL Forum: Ze wéineg Kategorien!",
+	"dplforum-toomany": "DPL Forum: Ze wéineg Kategorien!"
 }

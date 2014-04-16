@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Htt",
-            "Kaustubh"
-        ]
-    },
-    "dplforum-desc": "DPL-आधारित चर्चासत्र विस्तार",
-    "dplforum-by": "$1 द्वारे",
-    "dplforum-edited": "- शेवटी बदललेली",
-    "dplforum-never": "कधीच नाही",
-    "dplforum-toofew": "डीपीएल चर्चासत्र: खूपच कमी वर्ग!",
-    "dplforum-toomany": "डीपीएल चर्चासत्र: खूप जास्त वर्ग!"
+	"@metadata": {
+		"authors": [
+			"Htt",
+			"Kaustubh"
+		]
+	},
+	"dplforum-desc": "DPL-आधारित चर्चासत्र विस्तार",
+	"dplforum-by": "$1 द्वारे",
+	"dplforum-edited": "- शेवटी बदललेली",
+	"dplforum-never": "कधीच नाही",
+	"dplforum-toofew": "डीपीएल चर्चासत्र: खूपच कमी वर्ग!",
+	"dplforum-toomany": "डीपीएल चर्चासत्र: खूप जास्त वर्ग!"
 }

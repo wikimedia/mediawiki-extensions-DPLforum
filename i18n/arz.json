@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Meno25",
-            "Ramsis II"
-        ]
-    },
-    "dplforum-desc": "امتداد منتدى معتمد على DPL",
-    "dplforum-by": "بـ $1",
-    "dplforum-edited": "- آخر تعديل",
-    "dplforum-never": "أبدا",
-    "dplforum-toofew": "منتدى DPL: تصنيفات قليلة جدا!",
-    "dplforum-toomany": "منتدى DPL: تصنيفات كثيرة جدا!"
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"Ramsis II"
+		]
+	},
+	"dplforum-desc": "امتداد منتدى معتمد على DPL",
+	"dplforum-by": "بـ $1",
+	"dplforum-edited": "- آخر تعديل",
+	"dplforum-never": "أبدا",
+	"dplforum-toofew": "منتدى DPL: تصنيفات قليلة جدا!",
+	"dplforum-toomany": "منتدى DPL: تصنيفات كثيرة جدا!"
 }

@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michaello"
-        ]
-    },
-    "dplforum-by": "od $1",
-    "dplforum-edited": "– poslednja izmena",
-    "dplforum-never": "Nikad",
-    "dplforum-toofew": "DPL forum: premalo kategorija!",
-    "dplforum-toomany": "DPL forum: previše kategorija!"
+	"@metadata": {
+		"authors": [
+			"Michaello"
+		]
+	},
+	"dplforum-by": "od $1",
+	"dplforum-edited": "– poslednja izmena",
+	"dplforum-never": "Nikad",
+	"dplforum-toofew": "DPL forum: premalo kategorija!",
+	"dplforum-toomany": "DPL forum: previše kategorija!"
 }

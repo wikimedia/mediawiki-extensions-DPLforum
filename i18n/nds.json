@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Slomox"
-        ]
-    },
-    "dplforum-by": "vun $1",
-    "dplforum-never": "Nie"
+	"@metadata": {
+		"authors": [
+			"Slomox"
+		]
+	},
+	"dplforum-by": "vun $1",
+	"dplforum-never": "Nie"
 }

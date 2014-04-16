@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Aleksandrit",
-            "Lockal",
-            "Александр Сигачёв"
-        ]
-    },
-    "dplforum-desc": "Форумное расширение, основанное на DPL",
-    "dplforum-by": "от $1",
-    "dplforum-edited": "— последняя правка",
-    "dplforum-never": "Никогда",
-    "dplforum-toofew": "Форум DPL: Слишком мало категорий!",
-    "dplforum-toomany": "Форум DPL: Слишком много категорий!"
+	"@metadata": {
+		"authors": [
+			"Aleksandrit",
+			"Lockal",
+			"Александр Сигачёв"
+		]
+	},
+	"dplforum-desc": "Форумное расширение, основанное на DPL",
+	"dplforum-by": "от $1",
+	"dplforum-edited": "— последняя правка",
+	"dplforum-never": "Никогда",
+	"dplforum-toofew": "Форум DPL: Слишком мало категорий!",
+	"dplforum-toomany": "Форум DPL: Слишком много категорий!"
 }

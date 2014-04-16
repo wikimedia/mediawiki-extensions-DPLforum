@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Frokor",
-            "Harald Khan",
-            "Njardarlogar"
-        ]
-    },
-    "dplforum-desc": "DPL-basert forumtillegg",
-    "dplforum-by": "av $1",
-    "dplforum-edited": "- sist endra",
-    "dplforum-never": "Aldri",
-    "dplforum-toofew": "DPL-forum: For få kategoriar!",
-    "dplforum-toomany": "DPL-forum: For mange kategoriar!"
+	"@metadata": {
+		"authors": [
+			"Frokor",
+			"Harald Khan",
+			"Njardarlogar"
+		]
+	},
+	"dplforum-desc": "DPL-basert forumtillegg",
+	"dplforum-by": "av $1",
+	"dplforum-edited": "- sist endra",
+	"dplforum-never": "Aldri",
+	"dplforum-toofew": "DPL-forum: For få kategoriar!",
+	"dplforum-toomany": "DPL-forum: For mange kategoriar!"
 }

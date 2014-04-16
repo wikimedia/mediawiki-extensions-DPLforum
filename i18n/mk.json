@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "dplforum-desc": "Форумски додаток на основа на DPL",
-    "dplforum-by": "од $1",
-    "dplforum-edited": "—  последно уредување",
-    "dplforum-never": "Никогаш",
-    "dplforum-toofew": "DPL Форум: Премалку категории!",
-    "dplforum-toomany": "DPL Форум: Премногу категории!"
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"dplforum-desc": "Форумски додаток на основа на DPL",
+	"dplforum-by": "од $1",
+	"dplforum-edited": "—  последно уредување",
+	"dplforum-never": "Никогаш",
+	"dplforum-toofew": "DPL Форум: Премалку категории!",
+	"dplforum-toomany": "DPL Форум: Премногу категории!"
 }

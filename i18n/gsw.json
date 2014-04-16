@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Als-Holder"
-        ]
-    },
-    "dplforum-desc": "DPL-basierti Forumserwyterig",
-    "dplforum-by": "dur $1",
-    "dplforum-edited": "- Zletscht bearbeitet",
-    "dplforum-never": "Nie",
-    "dplforum-toofew": "DPL Forum: Zwenig Kategorie!",
-    "dplforum-toomany": "DPL Forum: Zvyyl Kategorie!"
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	},
+	"dplforum-desc": "DPL-basierti Forumserwyterig",
+	"dplforum-by": "dur $1",
+	"dplforum-edited": "- Zletscht bearbeitet",
+	"dplforum-never": "Nie",
+	"dplforum-toofew": "DPL Forum: Zwenig Kategorie!",
+	"dplforum-toomany": "DPL Forum: Zvyyl Kategorie!"
 }

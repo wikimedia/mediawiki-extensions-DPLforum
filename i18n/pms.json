@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dragonòt"
-        ]
-    },
-    "dplforum-desc": "Estension dël forum basà an dzora a DPL",
-    "dplforum-by": "da $1",
-    "dplforum-edited": "- Modificà l'ùltima vira",
-    "dplforum-never": "Mai",
-    "dplforum-toofew": "Forum DPL: Tròp pòche categorìe!",
-    "dplforum-toomany": "Forum DPL: Tròpe categorìe!"
+	"@metadata": {
+		"authors": [
+			"Dragonòt"
+		]
+	},
+	"dplforum-desc": "Estension dël forum basà an dzora a DPL",
+	"dplforum-by": "da $1",
+	"dplforum-edited": "- Modificà l'ùltima vira",
+	"dplforum-never": "Mai",
+	"dplforum-toofew": "Forum DPL: Tròp pòche categorìe!",
+	"dplforum-toomany": "Forum DPL: Tròpe categorìe!"
 }

@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ciencia Al Poder",
-            "Crazymadlover"
-        ]
-    },
-    "dplforum-desc": "Extensión de foro basado en DPL",
-    "dplforum-by": "por $1",
-    "dplforum-edited": "- Última edición",
-    "dplforum-never": "Nunca",
-    "dplforum-toofew": "Foro DPL: muy pocas categorías!",
-    "dplforum-toomany": "Foro DPL: demasiadas categorías!"
+	"@metadata": {
+		"authors": [
+			"Ciencia Al Poder",
+			"Crazymadlover"
+		]
+	},
+	"dplforum-desc": "Extensión de foro basado en DPL",
+	"dplforum-by": "por $1",
+	"dplforum-edited": "- Última edición",
+	"dplforum-never": "Nunca",
+	"dplforum-toofew": "Foro DPL: muy pocas categorías!",
+	"dplforum-toomany": "Foro DPL: demasiadas categorías!"
 }

@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Alnokta",
-            "Meno25",
-            "OsamaK"
-        ]
-    },
-    "dplforum-desc": "امتداد منتدى معتمد على DPL",
-    "dplforum-by": "بواسطة $1",
-    "dplforum-edited": "- آخر تعديل",
-    "dplforum-never": "أبدا",
-    "dplforum-toofew": "منتدى DPL: تصنيفات قليلة جدا!",
-    "dplforum-toomany": "منتدى DPL: تصنيفات كثيرة جدا!"
+	"@metadata": {
+		"authors": [
+			"Alnokta",
+			"Meno25",
+			"OsamaK"
+		]
+	},
+	"dplforum-desc": "امتداد منتدى معتمد على DPL",
+	"dplforum-by": "بواسطة $1",
+	"dplforum-edited": "- آخر تعديل",
+	"dplforum-never": "أبدا",
+	"dplforum-toofew": "منتدى DPL: تصنيفات قليلة جدا!",
+	"dplforum-toomany": "منتدى DPL: تصنيفات كثيرة جدا!"
 }

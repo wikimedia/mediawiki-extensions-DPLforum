@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Aleksandrit",
-            "Alex Khimich"
-        ]
-    },
-    "dplforum-desc": "Форумне розширення, засноване на DPL",
-    "dplforum-by": "від $1",
-    "dplforum-edited": "- Останній раз редагувалось",
-    "dplforum-never": "Ніколи",
-    "dplforum-toofew": "Форум DPL: Занадто мало категорій!",
-    "dplforum-toomany": "Форум DPL: Занадто багато категорій!"
+	"@metadata": {
+		"authors": [
+			"Aleksandrit",
+			"Alex Khimich"
+		]
+	},
+	"dplforum-desc": "Форумне розширення, засноване на DPL",
+	"dplforum-by": "від $1",
+	"dplforum-edited": "- Останній раз редагувалось",
+	"dplforum-never": "Ніколи",
+	"dplforum-toofew": "Форум DPL: Занадто мало категорій!",
+	"dplforum-toomany": "Форум DPL: Занадто багато категорій!"
 }

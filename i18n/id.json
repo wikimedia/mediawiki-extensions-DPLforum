@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Iwan Novirion",
-            "Rex"
-        ]
-    },
-    "dplforum-desc": "Ekstensi forum berbasis-DPL",
-    "dplforum-by": "oleh $1",
-    "dplforum-edited": "- Suntingan terakhir",
-    "dplforum-never": "Tidak pernah",
-    "dplforum-toofew": "Forum DPL: Terlalu sedikit kategori!",
-    "dplforum-toomany": "Forum DPL: Terlalu banyak kategori!"
+	"@metadata": {
+		"authors": [
+			"Iwan Novirion",
+			"Rex"
+		]
+	},
+	"dplforum-desc": "Ekstensi forum berbasis-DPL",
+	"dplforum-by": "oleh $1",
+	"dplforum-edited": "- Suntingan terakhir",
+	"dplforum-never": "Tidak pernah",
+	"dplforum-toofew": "Forum DPL: Terlalu sedikit kategori!",
+	"dplforum-toomany": "Forum DPL: Terlalu banyak kategori!"
 }

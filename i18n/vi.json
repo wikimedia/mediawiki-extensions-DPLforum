@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Minh Nguyen",
-            "Vinhtantran"
-        ]
-    },
-    "dplforum-desc": "Phần mở rộng diễn đàn dựa trên DPL",
-    "dplforum-by": "bởi $1",
-    "dplforum-edited": "- Lần sửa đổi cuối",
-    "dplforum-never": "Chưa bao giờ",
-    "dplforum-toofew": "Diễn đàn DPL: Quá ít thể loại!",
-    "dplforum-toomany": "Diễn đàn DPL: Quá nhiều thể loại!"
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen",
+			"Vinhtantran"
+		]
+	},
+	"dplforum-desc": "Phần mở rộng diễn đàn dựa trên DPL",
+	"dplforum-by": "bởi $1",
+	"dplforum-edited": "- Lần sửa đổi cuối",
+	"dplforum-never": "Chưa bao giờ",
+	"dplforum-toofew": "Diễn đàn DPL: Quá ít thể loại!",
+	"dplforum-toomany": "Diễn đàn DPL: Quá nhiều thể loại!"
 }

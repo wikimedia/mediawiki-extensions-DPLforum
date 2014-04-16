@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ahmed-Najib-Biabani-Ibrahimkhel"
-        ]
-    },
-    "dplforum-never": "هېڅکله",
-    "dplforum-toofew": "DPL Forum: لږ شمېر وېشنيزې!",
-    "dplforum-toomany": "DPL Forum: ګڼ شمېر وېشنيزې!"
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"dplforum-never": "هېڅکله",
+	"dplforum-toofew": "DPL Forum: لږ شمېر وېشنيزې!",
+	"dplforum-toomany": "DPL Forum: ګڼ شمېر وېشنيزې!"
 }

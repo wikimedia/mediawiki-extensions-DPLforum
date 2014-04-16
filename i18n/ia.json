@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "McDutchie"
-        ]
-    },
-    "dplforum-desc": "Extension pro foros basate in DPL",
-    "dplforum-by": "per $1",
-    "dplforum-edited": "- Ultime modification",
-    "dplforum-never": "Nunquam",
-    "dplforum-toofew": "Foro DPL: Non bastante categorias!",
-    "dplforum-toomany": "Foro DPL: Troppo de categorias!"
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"dplforum-desc": "Extension pro foros basate in DPL",
+	"dplforum-by": "per $1",
+	"dplforum-edited": "- Ultime modification",
+	"dplforum-never": "Nunquam",
+	"dplforum-toofew": "Foro DPL: Non bastante categorias!",
+	"dplforum-toomany": "Foro DPL: Troppo de categorias!"
 }

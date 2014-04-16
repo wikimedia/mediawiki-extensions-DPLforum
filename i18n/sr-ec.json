@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Rancher",
-            "Verlor",
-            "Михајло Анђелковић"
-        ]
-    },
-    "dplforum-by": "од $1",
-    "dplforum-edited": "– последња измена",
-    "dplforum-never": "Никад",
-    "dplforum-toofew": "DPL форум: премало категорија!",
-    "dplforum-toomany": "DPL форум: превише категорија!"
+	"@metadata": {
+		"authors": [
+			"Rancher",
+			"Verlor",
+			"Михајло Анђелковић"
+		]
+	},
+	"dplforum-by": "од $1",
+	"dplforum-edited": "– последња измена",
+	"dplforum-never": "Никад",
+	"dplforum-toofew": "DPL форум: премало категорија!",
+	"dplforum-toomany": "DPL форум: превише категорија!"
 }

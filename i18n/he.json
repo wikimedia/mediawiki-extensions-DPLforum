@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Rotemliss",
-            "YaronSh"
-        ]
-    },
-    "dplforum-desc": "הרחבת פורום מבוסס DPL",
-    "dplforum-by": "על ידי $1",
-    "dplforum-edited": "- נערכה לאחרונה",
-    "dplforum-never": "מעולם לא",
-    "dplforum-toofew": "פורום DPL: מעט מדי קטגוריות!",
-    "dplforum-toomany": "פורום DPL: יותר מדי קטגוריות!"
+	"@metadata": {
+		"authors": [
+			"Rotemliss",
+			"YaronSh"
+		]
+	},
+	"dplforum-desc": "הרחבת פורום מבוסס DPL",
+	"dplforum-by": "על ידי $1",
+	"dplforum-edited": "- נערכה לאחרונה",
+	"dplforum-never": "מעולם לא",
+	"dplforum-toofew": "פורום DPL: מעט מדי קטגוריות!",
+	"dplforum-toomany": "פורום DPL: יותר מדי קטגוריות!"
 }

@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Vpovilaitis"
-        ]
-    },
-    "dplforum-desc": "DPL-pavidalo forumų plėtinys",
-    "dplforum-by": "naudotojas $1",
-    "dplforum-edited": "- Paskutinis pakeitimas",
-    "dplforum-never": "Naujesnis",
-    "dplforum-toofew": "DPL Forumas: Per mažai kategorijų!",
-    "dplforum-toomany": "DPL Forumas: Per daug kategorijų!"
+	"@metadata": {
+		"authors": [
+			"Vpovilaitis"
+		]
+	},
+	"dplforum-desc": "DPL-pavidalo forumų plėtinys",
+	"dplforum-by": "naudotojas $1",
+	"dplforum-edited": "- Paskutinis pakeitimas",
+	"dplforum-never": "Naujesnis",
+	"dplforum-toofew": "DPL Forumas: Per mažai kategorijų!",
+	"dplforum-toomany": "DPL Forumas: Per daug kategorijų!"
 }

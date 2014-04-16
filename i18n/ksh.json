@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Purodha"
-        ]
-    },
-    "dplforum-desc": "Ene Forum-Zosatz op dä Basis fum DPL.",
-    "dplforum-by": "fum $1",
-    "dplforum-edited": "- zoläz beärbeidt",
-    "dplforum-never": "Nimohls",
-    "dplforum-toofew": "DPL Forum: Nit jenooch Saachjruppe!",
-    "dplforum-toomany": "DPL Forum: Zofill Saachjruppe!"
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"dplforum-desc": "Ene Forum-Zosatz op dä Basis fum DPL.",
+	"dplforum-by": "fum $1",
+	"dplforum-edited": "- zoläz beärbeidt",
+	"dplforum-never": "Nimohls",
+	"dplforum-toofew": "DPL Forum: Nit jenooch Saachjruppe!",
+	"dplforum-toomany": "DPL Forum: Zofill Saachjruppe!"
 }

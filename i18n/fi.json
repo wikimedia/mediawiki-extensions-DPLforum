@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Crt",
-            "Nike",
-            "Tarmo"
-        ]
-    },
-    "dplforum-desc": "DPL-pohjainen foorumilaajennus",
-    "dplforum-by": "tehnyt $1",
-    "dplforum-edited": "– Viimeksi muokattu",
-    "dplforum-never": "Ei koskaan",
-    "dplforum-toofew": "DPL-forum: Liian vähän luokkia!",
-    "dplforum-toomany": "DPL-forum: Liian paljon luokkia!"
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"Nike",
+			"Tarmo"
+		]
+	},
+	"dplforum-desc": "DPL-pohjainen foorumilaajennus",
+	"dplforum-by": "tehnyt $1",
+	"dplforum-edited": "– Viimeksi muokattu",
+	"dplforum-never": "Ei koskaan",
+	"dplforum-toofew": "DPL-forum: Liian vähän luokkia!",
+	"dplforum-toomany": "DPL-forum: Liian paljon luokkia!"
 }

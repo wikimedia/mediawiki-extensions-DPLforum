@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "KlaudiuMihaila",
-            "Stelistcristi"
-        ]
-    },
-    "dplforum-by": "de către $1",
-    "dplforum-edited": "- Ultima editare",
-    "dplforum-never": "Niciodată"
+	"@metadata": {
+		"authors": [
+			"KlaudiuMihaila",
+			"Stelistcristi"
+		]
+	},
+	"dplforum-by": "de către $1",
+	"dplforum-edited": "- Ultima editare",
+	"dplforum-never": "Niciodată"
 }
