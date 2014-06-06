@@ -414,8 +414,7 @@ class DPLForum {
 				$output .= '0';
 			}
 		} elseif ( is_null( $title ) ) {
-			$row = $dbr->fetchObject( $res );
-			while ( $row ) {
+			foreach ( $res as $row ) {
 				if( isset( $row->first_time ) ) {
 					$first_time = $row->first_time;
 				} else {
