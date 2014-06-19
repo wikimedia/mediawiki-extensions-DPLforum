@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wikitanvir"
+			"Wikitanvir",
+			"Aftab1995"
 		]
 	},
 	"dplforum-desc": "ডিপিএল-ভিত্তিক ফোরাম এক্সটেনশন",
 	"dplforum-by": "$1-এর মাধ্যমে",
 	"dplforum-edited": "- সর্বশেষ সম্পাদিত",
 	"dplforum-never": "কখনো নয়",
-	"dplforum-toofew": "ডিপিএল ফোরাম: কোনো বিষয়শ্রেণী নয়!",
+	"dplforum-toofew": "ডিপিএল ফোরাম: অনেক কম বিষয়শ্রেণী!",
 	"dplforum-toomany": "ডিপিএল ফোরাম: অনেক বেশি বিষয়শ্রেণী‍!"
 }
