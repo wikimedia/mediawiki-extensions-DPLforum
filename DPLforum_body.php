@@ -522,7 +522,7 @@ class DPLForum {
 			if ( $tableMode ) {
 				if ( $this->bCompactAuthor ) {
 					if ( $author ) {
-						$byAuthor = wfMsg( 'word-separator' ) . wfMsgHtml( 'dplforum-by', $author );
+						$byAuthor = wfMessage( 'word-separator' )->escaped() . wfMessage( 'dplforum-by' )->rawParams( $author )->escaped();
 						$output .= " <span class='forum_author'>$byAuthor</span>";
 					} else {
 						$output .= " <span class='forum_author'>&nb" . "sp;</span>";
@@ -531,7 +531,7 @@ class DPLForum {
 					$output .= "</td><td class='forum_author'>$author";
 				}
 			} elseif ( $author ) {
-				$byAuthor = wfMsg( 'word-separator' ) . wfMsgHtml( 'dplforum-by', $author );
+				$byAuthor = wfMessage( 'word-separator' )->escaped() . wfMessage( 'dplforum-by' )->rawParams( $author )->escaped();
 				$output .= $byAuthor;
 			}
 		}
@@ -567,7 +567,7 @@ class DPLForum {
 			if ( $tableMode ) {
 				if ( $this->bCompactEdit ) {
 					if ( $user ) {
-						$byUser = wfMsgHtml( 'dplforum-by', $user );
+						$byUser = wfMessage( 'dplforum-by' )->rawParams( $user )->escaped();
 						$output .= " <span class='forum_editor'>$byUser</span>";
 					} else {
 						$output .= " <span class='forum_editor'>&nb" . "sp;</span>";
@@ -576,7 +576,7 @@ class DPLForum {
 					$output .= "</td><td class='forum_editor'>$user";
 				}
 			} elseif ( $user ) {
-				$byUser = wfMsgHtml( 'dplforum-by', $user );
+				$byUser = wfMessage( 'dplforum-by' )->rawParams( $user )->escaped();
 				$text .= $byUser;
 			}
 		}
@@ -584,7 +584,7 @@ class DPLForum {
 		if ( $tableMode ) {
 			$output .= '</td>';
 		} elseif ( $text ) {
-			$output .= wfMsg( 'word-separator' ) . $this->msg( 'dplforum-edited' ) . " $text";
+			$output .= wfMessage( 'word-separator' )->escaped() . $this->msg( 'dplforum-edited' ) . " $text";
 		}
 
 		return $output;
