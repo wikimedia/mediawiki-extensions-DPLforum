@@ -31,34 +31,34 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 class DPLForum {
-	var $minCategories = 1;           // Minimum number of categories to look for
-	var $maxCategories = 6;           // Maximum number of categories to look for
-	var $maxResultCount = 50;         // Maximum number of results to allow
-	var $unlimitedResults = true;     // Allow unlimited results
-	var $unlimitedCategories = false; // Allow unlimited categories
-	var $requireCache = false;        // Only clear the cache on purge
+	public $minCategories = 1;           // Minimum number of categories to look for
+	public $maxCategories = 6;           // Maximum number of categories to look for
+	public $maxResultCount = 50;         // Maximum number of results to allow
+	public $unlimitedResults = true;     // Allow unlimited results
+	public $unlimitedCategories = false; // Allow unlimited categories
+	public $requireCache = false;        // Only clear the cache on purge
 
 	// Restricted namespaces cannot be searched for page author or creation time.
 	// Unless this array is empty, namespace-free searches are also restricted.
 	// Note: Only integers in this array are checked.
-	var $restrictNamespace = array(); // No restrictions
+	public $restrictNamespace = array(); // No restrictions
 
-	var $bTableMode;
-	var $bTimestamp;
-	var $bLinkHistory;
-	var $bEmbedHistory;
-	var $bShowNamespace;
-	var $bAddAuthor;
-	var $bAddCreationDate;
-	var $bAddLastEdit;
-	var $bAddLastEditor;
-	var $bCompactAuthor;
-	var $bCompactEdit;
-	var $sInput;
-	var $sOmit;
-	var $vMarkNew;
-	var $sCreationDateFormat;
-	var $sLastEditFormat;
+	public $bTableMode;
+	public $bTimestamp;
+	public $bLinkHistory;
+	public $bEmbedHistory;
+	public $bShowNamespace;
+	public $bAddAuthor;
+	public $bAddCreationDate;
+	public $bAddLastEdit;
+	public $bAddLastEditor;
+	public $bCompactAuthor;
+	public $bCompactEdit;
+	public $sInput;
+	public $sOmit;
+	public $vMarkNew;
+	public $sCreationDateFormat;
+	public $sLastEditFormat;
 
 	/**
 	 * @param Parser $parser
