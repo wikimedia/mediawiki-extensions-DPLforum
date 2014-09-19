@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"KWiki"
 		]
 	},
 	"dplforum-desc": "Proširenje foruma bazirano na DPL-u",
 	"dplforum-by": "od korisnika $1",
-	"dplforum-edited": "- Zadnji put uređeno",
+	"dplforum-edited": "- Posljednji put uređeno",
 	"dplforum-never": "Nikad",
 	"dplforum-toofew": "DPL Forum: Premalo kategorija!",
 	"dplforum-toomany": "DPL Forum: Previše kategotija!"
