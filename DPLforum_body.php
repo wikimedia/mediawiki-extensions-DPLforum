@@ -499,7 +499,7 @@ class DPLForum {
 			$text = substr( $text, strlen( $this->sOmit ) );
 		}
 
-		$props = '';
+		$props = $query = '';
 		if ( is_numeric( $time ) ) {
 			if ( $this->bTimestamp ) {
 				$query = 't=' . $time;
