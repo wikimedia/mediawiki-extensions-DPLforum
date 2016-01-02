@@ -471,10 +471,10 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory && !$this->bAddLastEdit ) {
 				if ( $this->bEmbedHistory ) {
-					$made = $skin->makeKnownLinkObj( $page, $made, 'action=history' );
+					$made = Linker::link( $page, $made, array(), array( 'action' => 'history' ), array( 'known' ) );
 				} else {
-					$made .= ' (' . $skin->makeKnownLinkObj( $page,
-						wfMsg( 'hist' ), 'action=history' ) . ')';
+					$made .= ' (' . Linker::link( $page,
+						wfMessage( 'hist' )->escaped(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
 				}
 			}
 
@@ -499,25 +499,25 @@ class DPLForum {
 			$text = substr( $text, strlen( $this->sOmit ) );
 		}
 
-		$props = $query = '';
+		$props = $query = array();
 		if ( is_numeric( $time ) ) {
 			if ( $this->bTimestamp ) {
-				$query = 't=' . $time;
+				$query['t'] = $time;
 			}
 
 			if ( $time > $this->vMarkNew ) {
-				$props = " class='forum_new'";
+				$props['class'] = 'forum_new';
 			}
 		}
 
-		$output .= $skin->makeKnownLinkObj( $title, $text, $query, '', '', $props );
+		$output .= Linker::link( $title, $text, $props, $query, array( 'known' ) );
 		$text = '';
 
 		if ( $this->bAddAuthor ) {
 			$author = Title::newFromText( $author, NS_USER );
 
 			if ( $author ) {
-				$author = $skin->makeKnownLinkObj( $author, $author->getText() );
+				$author = Linker::link( $author, $author->getText(), array(), array(), array( 'known' ) );
 			}
 
 			if ( $tableMode ) {
@@ -544,10 +544,10 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory ) {
 				if ( $this->bEmbedHistory ) {
-					$time = $skin->makeKnownLinkObj( $page, $time, 'action=history' );
+					$time = Linker::link( $page, $time, array(), array( 'action' => 'history' ), array( 'known' ) );
 				} else {
-					$time .= ' (' . $skin->makeKnownLinkObj( $page,
-						wfMsg( 'hist' ), 'action=history' ) . ')';
+					$time .= ' (' . Linker::link( $page,
+						wfMessage( 'hist' )->escaped(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
 				}
 			}
 
@@ -562,7 +562,7 @@ class DPLForum {
 			$user = Title::newFromText( $user, NS_USER );
 
 			if ( $user ) {
-				$user = $skin->makeKnownLinkObj( $user, $user->getText() );
+				$user = Linker::link( $user, $user->getText(), array(), array(), array( 'known' ) );
 			}
 
 			if ( $tableMode ) {
