@@ -178,7 +178,7 @@ class DPLForum {
 			return '';
 		}
 
-		return htmlspecialchars( wfMsg( $type ) );
+		return wfMessage( $type )->escaped();
 	}
 
 	/**
