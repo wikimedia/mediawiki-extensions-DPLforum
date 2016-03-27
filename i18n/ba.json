@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan"
+		]
+	},
+	"dplforum-desc": "DPL нигеҙләнгән форум киңәйтеүе",
+	"dplforum-by": "$1-нан",
+	"dplforum-edited": "— һуңғы үҙгәртеү",
+	"dplforum-never": "Бер ҡасан да",
+	"dplforum-toofew": "DPL форумы: Категориялар бик аҙ!",
+	"dplforum-toomany": "DPL форумы: Категориялар бик күп!"
+}
