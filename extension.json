@@ -1,0 +1,43 @@
+{
+	"name": "DPLforum",
+	"version": "3.6.0",
+	"author": "Ross McClure",
+	"license-name": "GPL-2.0+",
+	"url": "https://www.mediawiki.org/wiki/Extension:DPLforum",
+	"descriptionmsg": "dplforum-desc",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"DPLforum": [
+			"i18n"
+		]
+	},
+	"namespaces": [
+		{
+			"id": 110,
+			"constant": "NS_FORUM",
+			"name": "Forum"
+		},
+		{
+			"id": 111,
+			"constant": "NS_FORUM_TALK",
+			"name": "Forum_talk"
+		}
+	],
+	"ExtensionMessagesFiles": {
+		"DPLforumMagic": "DPLforum.i18n.magic.php",
+		"DPLforumNamespaces": "DPLforum.namespaces.php"
+	},
+	"AutoloadClasses": {
+		"DPLForum": "DPLforum_body.php",
+		"DPLForumHooks": "DPLForumHooks.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"DPLForumHooks::onParserFirstCallInit"
+		],
+		"CanonicalNamespaces": [
+			"DPLForumHooks::onCanonicalNamespaces"
+		]
+	},
+	"manifest_version": 1
+}

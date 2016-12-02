@@ -32,7 +32,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'DPLforum',
 	'author' => 'Ross McClure',
-	'version' => '3.5.0',
+	'version' => '3.6.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:DPLforum',
 	'descriptionmsg' => 'dplforum-desc',
 );
@@ -42,41 +42,13 @@ define( 'NS_FORUM', 110 );
 define( 'NS_FORUM_TALK', 111 );
 
 // Hooked functions
-$wgHooks['ParserFirstCallInit'][] = 'wfDPLinit';
-$wgHooks['CanonicalNamespaces'][] = 'wfDPLforumCanonicalNamespaces';
+$wgHooks['ParserFirstCallInit'][] = 'DPLForumHooks::onParserFirstCallInit';
+$wgHooks['CanonicalNamespaces'][] = 'DPLForumHooks::onCanonicalNamespaces';
 
 // Set up i18n and autoload the main class
-$dir = dirname( __FILE__ ) . '/';
 $wgMessagesDirs['DPLforum'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['DPLforum'] = $dir . 'DPLforum.i18n.php';
-$wgExtensionMessagesFiles['DPLforumMagic'] = $dir . 'DPLforum.i18n.magic.php';
-$wgExtensionMessagesFiles['DPLforumNamespaces'] = $dir . 'DPLforum.namespaces.php';
-$wgAutoloadClasses['DPLForum'] = $dir . 'DPLforum_body.php';
-
-/**
- * @param Parser $parser
- * @return bool
- */
-function wfDPLinit( &$parser ) {
-	$parser->setHook( 'forum', 'parseForum' );
-	$parser->setFunctionHook( 'forumlink', array( new DPLForum(), 'link' ) );
-	return true;
-}
-
-function parseForum( $input, $argv, $parser ) {
-	$f = new DPLForum();
-	return $f->parse( $input, $parser );
-}
-
-/**
- * Register the canonical names for our namespace and its talkspace.
- *
- * @param array $list array of namespace numbers with corresponding
- *                     canonical names
- * @return bool true
- */
-function wfDPLforumCanonicalNamespaces( &$list ) {
-	$list[NS_FORUM] = 'Forum';
-	$list[NS_FORUM_TALK] = 'Forum_talk';
-	return true;
-}
+$wgExtensionMessagesFiles['DPLforum'] = __DIR__ . '/DPLforum.i18n.php';
+$wgExtensionMessagesFiles['DPLforumMagic'] = __DIR__ . '/DPLforum.i18n.magic.php';
+$wgExtensionMessagesFiles['DPLforumNamespaces'] = __DIR__ . '/DPLforum.namespaces.php';
+$wgAutoloadClasses['DPLForum'] = __DIR__ . '/DPLforum_body.php';
+$wgAutoloadClasses['DPLForumHooks'] = __DIR__ . '/DPLForumHooks.php';

@@ -153,7 +153,7 @@ class DPLForum {
 		if ( preg_match( "/\\d+(\\D+)(\\d+)/", $cond, $m ) ) {
 			$m[1] = strtr( $m[1], array( ( '&l' . 't;' ) => '<', ( '&g' . 't;' ) => '>' ) );
 			$m[2] = intval( $m[2] ) - 1;
-			switch( $m[1] ) {
+			switch ( $m[1] ) {
 				case '<':
 					return ( $page >= $m[2] );
 				case '>':
@@ -218,7 +218,7 @@ class DPLForum {
 		$this->bAddCreationDate = ( $this->get( 'addcreationdate' ) == 'true' );
 		$this->sCreationDateFormat = $this->get( 'creationdateformat', false );
 
-		switch( $this->get( 'historylink' ) ) {
+		switch ( $this->get( 'historylink' ) ) {
 			case 'embed':
 			case 'true':
 				$this->bEmbedHistory = true;
@@ -227,11 +227,11 @@ class DPLForum {
 				$this->bLinkHistory = true;
 		}
 		$sOrder = 'rev_timestamp';
-		switch( $this->get( 'ordermethod' ) ) {
+		switch ( $this->get( 'ordermethod' ) ) {
 			case 'categoryadd':
 			case 'created':
 				$sOrder = 'first_time';
-			break;
+				break;
 			case 'pageid':
 				$sOrder = 'page_id';
 		}
@@ -261,19 +261,19 @@ class DPLForum {
 		$sStartItem = $sEndItem = '';
 		$bCountMode = false;
 		$arg = $this->get( 'mode' );
-		switch( $arg ) {
+		switch ( $arg ) {
 			case 'none':
 				$sEndItem = '<br />';
-			break;
+				break;
 			case 'count':
 				$bCountMode = true;
-			break;
+				break;
 			case 'list':
 			case 'ordered':
 			case 'unordered':
 				$sStartItem = '<li>';
 				$sEndItem = '</li>';
-			break;
+				break;
 			case 'table':
 			default:
 				$this->bTableMode = true;
@@ -344,14 +344,16 @@ class DPLForum {
 			. " ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable"
 			. " AS q WHERE q.rev_page = page_id )";
 		} else {
-			if ( $sOrder == 'first_time' )
+			if ( $sOrder == 'first_time' ) {
 				$sOrder = 'page_id';
+			}
 			$sSqlSelectFrom .= $arg;
 		}
 
 		$sSqlWhere = ' WHERE 1=1';
-		if ( $iNamespace >= 0 )
+		if ( $iNamespace >= 0 ) {
 			$sSqlWhere = ' WHERE page_namespace=' . $iNamespace;
+		}
 
 		if ( $sPrefix !== '' ) {
 			// Escape SQL special characters
@@ -360,28 +362,28 @@ class DPLForum {
 			$sSqlWhere .= " AND page_title LIKE BINARY '" . $sPrefix . "%'";
 		}
 
-		switch( $this->get( 'redirects' ) ) {
+		switch ( $this->get( 'redirects' ) ) {
 			case 'only':
 				$sSqlWhere .= ' AND page_is_redirect = 1';
 			case 'include':
-			break;
+				break;
 			case 'exclude':
 			default:
 				$sSqlWhere .= ' AND page_is_redirect = 0';
-			break;
+				break;
 		}
 
 		$n = 1;
 		for ( $i = 0; $i < $cats; $i++ ) {
 			$sSqlSelectFrom .= " INNER JOIN $categorylinks AS" .
-			" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
-			$dbr->addQuotes( $aCategories[$i]->getDBkey() );
+				" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
+				$dbr->addQuotes( $aCategories[$i]->getDBkey() );
 			$n++;
 		}
 		for ( $i = 0; $i < $nocats; $i++ ) {
 			$sSqlSelectFrom .= " LEFT OUTER JOIN $categorylinks AS" .
-			" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
-			$dbr->addQuotes( $aExcludeCategories[$i]->getDBkey() );
+				" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
+				$dbr->addQuotes( $aExcludeCategories[$i]->getDBkey() );
 			$sSqlWhere .= " AND c{$n}.cl_to IS NULL";
 			$n++;
 		}
@@ -415,13 +417,13 @@ class DPLForum {
 			}
 		} elseif ( is_null( $title ) ) {
 			foreach ( $res as $row ) {
-				if( isset( $row->first_time ) ) {
+				if ( isset( $row->first_time ) ) {
 					$first_time = $row->first_time;
 				} else {
 					$first_time = '';
 				}
 
-				if( isset( $row->first_user ) ) {
+				if ( isset( $row->first_user ) ) {
 					$first_user = $row->first_user;
 				} else {
 					$first_user = '';
@@ -460,7 +462,6 @@ class DPLForum {
 	 * @return string
 	 */
 	function buildOutput( $page, $title, $time, $user = '', $author = '', $made = '' ) {
-		$skin = RequestContext::getMain()->getSkin();
 		$tableMode =& $this->bTableMode;
 		$output = '';
 
