@@ -25,6 +25,8 @@
  * @ingroup Extensions
  */
 
+ use MediaWiki\MediaWikiServices;
+
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo( "This file is an extension to the MediaWiki software and is not a valid access point" );
 	die( 1 );
@@ -464,7 +466,7 @@ class DPLForum {
 	function buildOutput( $page, $title, $time, $user = '', $author = '', $made = '' ) {
 		$tableMode =& $this->bTableMode;
 		$output = '';
-
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 		if ( $this->bAddCreationDate ) {
 			if ( is_numeric( $made ) ) {
 				$made = $this->date( $made, 'date', $this->sCreationDateFormat );
@@ -472,10 +474,10 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory && !$this->bAddLastEdit ) {
 				if ( $this->bEmbedHistory ) {
-					$made = Linker::link( $page, $made, array(), array( 'action' => 'history' ), array( 'known' ) );
+					$made = $linkRenderer->makeLink( $page, $made, array(), array( 'action' => 'history' ), array( 'known' ) );
 				} else {
-					$made .= ' (' . Linker::link( $page,
-						wfMessage( 'hist' )->escaped(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
+					$made .= ' (' . $linkRenderer->makeLink( $page,
+						wfMessage( 'hist' )->text(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
 				}
 			}
 
@@ -511,14 +513,14 @@ class DPLForum {
 			}
 		}
 
-		$output .= Linker::link( $title, $text, $props, $query, array( 'known' ) );
+		$output .= $linkRenderer->makeLink( $title, $text, $props, $query, array( 'known' ) );
 		$text = '';
 
 		if ( $this->bAddAuthor ) {
 			$author = Title::newFromText( $author, NS_USER );
 
 			if ( $author ) {
-				$author = Linker::link( $author, $author->getText(), array(), array(), array( 'known' ) );
+				$author = $linkRenderer->makeLink( $author, $author->getText(), array(), array(), array( 'known' ) );
 			}
 
 			if ( $tableMode ) {
@@ -545,10 +547,10 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory ) {
 				if ( $this->bEmbedHistory ) {
-					$time = Linker::link( $page, $time, array(), array( 'action' => 'history' ), array( 'known' ) );
+					$time = $linkRenderer->makeLink( $page, $time, array(), array( 'action' => 'history' ), array( 'known' ) );
 				} else {
-					$time .= ' (' . Linker::link( $page,
-						wfMessage( 'hist' )->escaped(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
+					$time .= ' (' . $linkRenderer->makeLink( $page,
+						wfMessage( 'hist' )->text(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
 				}
 			}
 
@@ -563,7 +565,7 @@ class DPLForum {
 			$user = Title::newFromText( $user, NS_USER );
 
 			if ( $user ) {
-				$user = Linker::link( $user, $user->getText(), array(), array(), array( 'known' ) );
+				$user = $linkRenderer->makeLink( $user, $user->getText(), array(), array(), array( 'known' ) );
 			}
 
 			if ( $tableMode ) {
