@@ -7,10 +7,11 @@
 			"Purodha",
 			"Shirayuki",
 			"Siebrand",
-			"The Evil IP address"
+			"The Evil IP address",
+			"Umherirrender"
 		]
 	},
-	"dplforum-desc": "Short description of the [[mw:Extension:DPLforum|DPLforum extension]], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.",
+	"dplforum-desc": "Short description of the [[mw:Extension:DPLforum|DPLforum extension]], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.\n{{desc|name=DPLforum|url=https://www.mediawiki.org/wiki/Extension:DPLforum}}",
 	"dplforum-by": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n\nParameters:\n* $1 - a username\n{{Identical|By}}",
 	"dplforum-edited": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.",
 	"dplforum-never": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n{{Identical|Never}}",
