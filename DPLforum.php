@@ -47,7 +47,6 @@ $wgHooks['CanonicalNamespaces'][] = 'DPLForumHooks::onCanonicalNamespaces';
 
 // Set up i18n and autoload the main class
 $wgMessagesDirs['DPLforum'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['DPLforum'] = __DIR__ . '/DPLforum.i18n.php';
 $wgExtensionMessagesFiles['DPLforumMagic'] = __DIR__ . '/DPLforum.i18n.magic.php';
 $wgExtensionMessagesFiles['DPLforumNamespaces'] = __DIR__ . '/DPLforum.namespaces.php';
 $wgAutoloadClasses['DPLForum'] = __DIR__ . '/DPLforum_body.php';
