@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Laaknor"
+			"Laaknor",
+			"Jon Harald Søby"
 		]
 	},
 	"dplforum-desc": "DPL-basert forumutvidelse",
