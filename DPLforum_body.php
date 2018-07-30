@@ -327,7 +327,7 @@ class DPLForum {
 		}
 
 		// build the SQL query
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$sPageTable = $dbr->tableName( 'page' );
 		$sRevTable = $dbr->tableName( 'revision' );
 		$categorylinks = $dbr->tableName( 'categorylinks' );
@@ -493,9 +493,9 @@ class DPLForum {
 		}
 
 		if ( $this->bShowNamespace == true ) {
-			$text = htmlspecialchars( $title->getPrefixedText() );
+			$text = $title->getPrefixedText();
 		} else {
-			$text = htmlspecialchars( $title->getText() );
+			$text = $title->getText();
 		}
 
 		if ( ( $this->sOmit ) && strpos( $text, $this->sOmit ) === 0 ) {
