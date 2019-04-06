@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Ross McClure http://www.mediawiki.org/wiki/User:Algorithm
+ * @author Ross McClure https://www.mediawiki.org/wiki/User:Algorithm
  *
  * DynamicPageList written by: n:en:User:IlyaHaykinson n:en:User:Amgine
  * http://en.wikinews.org/wiki/User:Amgine
