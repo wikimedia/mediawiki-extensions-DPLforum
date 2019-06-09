@@ -1,6 +1,6 @@
 {
 	"name": "DPLforum",
-	"version": "3.6.1",
+	"version": "3.6.2",
 	"author": "Ross McClure",
 	"license-name": "GPL-2.0-or-later",
 	"url": "https://www.mediawiki.org/wiki/Extension:DPLforum",
@@ -23,6 +23,9 @@
 			"name": "Forum_talk"
 		}
 	],
+	"ExtraSignatureNamespaces": [
+		110
+	],
 	"ExtensionMessagesFiles": {
 		"DPLforumMagic": "DPLforum.i18n.magic.php",
 		"DPLforumNamespaces": "DPLforum.namespaces.php"
@@ -32,12 +35,8 @@
 		"DPLForumHooks": "DPLForumHooks.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"DPLForumHooks::onParserFirstCallInit"
-		],
-		"CanonicalNamespaces": [
-			"DPLForumHooks::onCanonicalNamespaces"
-		]
+		"ParserFirstCallInit": "DPLForumHooks::onParserFirstCallInit",
+		"CanonicalNamespaces": "DPLForumHooks::onCanonicalNamespaces"
 	},
 	"manifest_version": 1
 }
