@@ -25,7 +25,7 @@
  * @ingroup Extensions
  */
 
- use MediaWiki\MediaWikiServices;
+use MediaWiki\MediaWikiServices;
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo( "This file is an extension to the MediaWiki software and is not a valid access point" );
@@ -43,7 +43,7 @@ class DPLForum {
 	// Restricted namespaces cannot be searched for page author or creation time.
 	// Unless this array is empty, namespace-free searches are also restricted.
 	// Note: Only integers in this array are checked.
-	public $restrictNamespace = array(); // No restrictions
+	public $restrictNamespace = []; // No restrictions
 
 	public $bTableMode;
 	public $bTimestamp;
@@ -69,7 +69,7 @@ class DPLForum {
 	 * @return Title[]
 	 */
 	function cat( &$parser, $name ) {
-		$cats = array();
+		$cats = [];
 		if ( preg_match_all( "/^\s*$name\s*=\s*(.*)/mi", $this->sInput, $matches ) ) {
 			foreach ( $matches[1] as $cat ) {
 				$title = Title::newFromText( $parser->replaceVariables( trim( $cat ) ) );
@@ -153,7 +153,10 @@ class DPLForum {
 	 */
 	function link_test( $page, $cond ) {
 		if ( preg_match( "/\\d+(\\D+)(\\d+)/", $cond, $m ) ) {
-			$m[1] = strtr( $m[1], array( ( '&l' . 't;' ) => '<', ( '&g' . 't;' ) => '>' ) );
+			$m[1] = strtr( $m[1], [
+				( '&l' . 't;' ) => '<',
+				( '&g' . 't;' ) => '>'
+			] );
 			$m[2] = intval( $m[2] ) - 1;
 			switch ( $m[1] ) {
 				case '<':
@@ -299,8 +302,7 @@ class DPLForum {
 
 		$count = 1;
 		$start = $this->get( 'start', 0 );
-		$title = Title::newFromText( $parser->replaceVariables(
-			trim( $this->get( 'title' ) ) ) );
+		$title = Title::newFromText( $parser->replaceVariables( trim( $this->get( 'title' ) ) ) );
 		if ( !( $bCountMode || $this->requireCache || $this->get( 'cache' ) == 'true' ) ) {
 			$parser->disableCache();
 
@@ -338,13 +340,15 @@ class DPLForum {
 
 		if ( $bCountMode ) {
 			$sSqlSelectFrom = "SELECT COUNT(*) AS num_rows FROM $sPageTable";
-		} elseif ( ( $this->bAddAuthor || $this->bAddCreationDate ||
-		( $sOrder == 'first_time' ) ) && ( ( !$this->restrictNamespace ) ||
-		( $iNamespace >= 0 && !in_array( $iNamespace, $this->restrictNamespace ) ) ) ) {
+		} elseif (
+			( $this->bAddAuthor || $this->bAddCreationDate || ( $sOrder == 'first_time' ) ) &&
+			( ( !$this->restrictNamespace ) ||
+				( $iNamespace >= 0 && !in_array( $iNamespace, $this->restrictNamespace ) ) )
+		) {
 			$sSqlSelectFrom .= ", o.rev_user_text AS first_user, o.rev_timestamp AS"
-			. " first_time" . $arg . " INNER JOIN $sRevTable AS o"
-			. " ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable"
-			. " AS q WHERE q.rev_page = page_id )";
+				. " first_time" . $arg . " INNER JOIN $sRevTable AS o"
+				. " ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable"
+				. " AS q WHERE q.rev_page = page_id )";
 		} else {
 			if ( $sOrder == 'first_time' ) {
 				$sOrder = 'page_id';
@@ -359,8 +363,15 @@ class DPLForum {
 
 		if ( $sPrefix !== '' ) {
 			// Escape SQL special characters
-			$sPrefix = strtr( $sPrefix, array( '\\' => '\\\\\\\\',
-			' ' => '\\_', '_' => '\\_', '%' => '\\%', '\'' => '\\\'' ) );
+			$sPrefix = strtr( $sPrefix,
+				[
+					'\\' => '\\\\\\\\',
+					' ' => '\\_',
+					'_' => '\\_',
+					'%' => '\\%',
+					'\'' => '\\\''
+				]
+			);
 			$sSqlWhere .= " AND page_title LIKE BINARY '" . $sPrefix . "%'";
 		}
 
@@ -474,10 +485,10 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory && !$this->bAddLastEdit ) {
 				if ( $this->bEmbedHistory ) {
-					$made = $linkRenderer->makeLink( $page, $made, array(), array( 'action' => 'history' ), array( 'known' ) );
+					$made = $linkRenderer->makeKnownLink( $page, $made, [], [ 'action' => 'history' ] );
 				} else {
-					$made .= ' (' . $linkRenderer->makeLink( $page,
-						wfMessage( 'hist' )->text(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
+					$made .= ' (' . $linkRenderer->makeKnownLink( $page,
+						wfMessage( 'hist' )->text(), [], [ 'action' => 'history' ] ) . ')';
 				}
 			}
 
@@ -502,7 +513,7 @@ class DPLForum {
 			$text = substr( $text, strlen( $this->sOmit ) );
 		}
 
-		$props = $query = array();
+		$props = $query = [];
 		if ( is_numeric( $time ) ) {
 			if ( $this->bTimestamp ) {
 				$query['t'] = $time;
@@ -513,14 +524,14 @@ class DPLForum {
 			}
 		}
 
-		$output .= $linkRenderer->makeLink( $title, $text, $props, $query, array( 'known' ) );
+		$output .= $linkRenderer->makeKnownLink( $title, $text, $props, $query );
 		$text = '';
 
 		if ( $this->bAddAuthor ) {
 			$author = Title::newFromText( $author, NS_USER );
 
 			if ( $author ) {
-				$author = $linkRenderer->makeLink( $author, $author->getText(), array(), array(), array( 'known' ) );
+				$author = $linkRenderer->makeKnownLink( $author, $author->getText() );
 			}
 
 			if ( $tableMode ) {
@@ -547,10 +558,10 @@ class DPLForum {
 
 			if ( $page && $this->bLinkHistory ) {
 				if ( $this->bEmbedHistory ) {
-					$time = $linkRenderer->makeLink( $page, $time, array(), array( 'action' => 'history' ), array( 'known' ) );
+					$time = $linkRenderer->makeKnownLink( $page, $time, [], [ 'action' => 'history' ] );
 				} else {
-					$time .= ' (' . $linkRenderer->makeLink( $page,
-						wfMessage( 'hist' )->text(), array(), array( 'action' => 'history' ), array( 'known' ) ) . ')';
+					$time .= ' (' . $linkRenderer->makeKnownLink( $page,
+						wfMessage( 'hist' )->text(), [], [ 'action' => 'history' ] ) . ')';
 				}
 			}
 
@@ -565,7 +576,7 @@ class DPLForum {
 			$user = Title::newFromText( $user, NS_USER );
 
 			if ( $user ) {
-				$user = $linkRenderer->makeLink( $user, $user->getText(), array(), array(), array( 'known' ) );
+				$user = $linkRenderer->makeKnownLink( $user, $user->getText() );
 			}
 
 			if ( $tableMode ) {
