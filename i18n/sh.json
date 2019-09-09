@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"dplforum-desc": "Forumsko proširenje na temelju DPL-a",
+	"dplforum-by": "od $1",
+	"dplforum-edited": "–  poslednja izmjena",
+	"dplforum-never": "Nikad",
+	"dplforum-toofew": "DPL Forum: Premalo kategorija!",
+	"dplforum-toomany": "DPL Forum: Previše kategotija!"
+}
