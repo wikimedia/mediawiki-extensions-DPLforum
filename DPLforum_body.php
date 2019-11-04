@@ -115,7 +115,7 @@ class DPLForum {
 			$offset = 0;
 		} else {
 			global $wgRequest;
-			$parser->disableCache();
+			$parser->getOutput()->updateCacheExpiry( 0 );
 			$offset = intval( $wgRequest->getVal( 'offset', '' ) );
 		}
 
@@ -299,7 +299,7 @@ class DPLForum {
 		$start = $this->get( 'start', 0 );
 		$title = Title::newFromText( $parser->replaceVariables( trim( $this->get( 'title' ) ) ) );
 		if ( !( $bCountMode || $this->requireCache || $this->get( 'cache' ) == 'true' ) ) {
-			$parser->disableCache();
+			$parser->getOutput()->updateCacheExpiry( 0 );
 
 			if ( is_null( $title ) ) {
 				global $wgRequest;
