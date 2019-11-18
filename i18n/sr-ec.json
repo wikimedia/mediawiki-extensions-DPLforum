@@ -3,9 +3,11 @@
 		"authors": [
 			"Rancher",
 			"Verlor",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Zoranzoki21"
 		]
 	},
+	"dplforum-desc": "Проширење за форум засновано на DPL-у",
 	"dplforum-by": "од $1",
 	"dplforum-edited": "– последња измена",
 	"dplforum-never": "Никад",
