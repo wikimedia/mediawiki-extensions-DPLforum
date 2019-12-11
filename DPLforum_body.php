@@ -326,10 +326,10 @@ class DPLForum {
 		$sPageTable = $dbr->tableName( 'page' );
 		$sRevTable = $dbr->tableName( 'revision' );
 		$categorylinks = $dbr->tableName( 'categorylinks' );
-		$sSqlSelectFrom = "SELECT page_namespace, page_title,"
-			. " r.rev_user_text, r.rev_timestamp";
-		$arg = " FROM $sPageTable INNER JOIN $sRevTable"
-			. " AS r ON page_latest = r.rev_id";
+
+		$actorTable = $dbr->tableName( 'revision_actor_temp' );
+		$sSqlSelectFrom = "SELECT page_namespace, page_title, r.rev_timestamp, rat.revactor_actor";
+		$arg = " FROM $sPageTable INNER JOIN $sRevTable AS r ON page_latest = r.rev_id INNER JOIN $actorTable AS rat ON revactor_rev = r.rev_id";
 
 		if ( $bCountMode ) {
 			$sSqlSelectFrom = "SELECT COUNT(*) AS num_rows FROM $sPageTable";
@@ -338,10 +338,8 @@ class DPLForum {
 			( ( !$this->restrictNamespace ) ||
 				( $iNamespace >= 0 && !in_array( $iNamespace, $this->restrictNamespace ) ) )
 		) {
-			$sSqlSelectFrom .= ", o.rev_user_text AS first_user, o.rev_timestamp AS"
-				. " first_time" . $arg . " INNER JOIN $sRevTable AS o"
-				. " ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable"
-				. " AS q WHERE q.rev_page = page_id )";
+			$sSqlSelectFrom .= ", rat.revactor_actor AS first_actor, o.rev_timestamp AS first_time" . $arg .
+				" INNER JOIN $sRevTable AS o ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable AS q WHERE q.rev_page = page_id )";
 		} else {
 			if ( $sOrder == 'first_time' ) {
 				$sOrder = 'page_id';
@@ -429,24 +427,35 @@ class DPLForum {
 					$first_time = '';
 				}
 
-				if ( isset( $row->first_user ) ) {
-					$first_user = $row->first_user;
+				if ( isset( $row->first_actor ) ) {
+					$first_user = User::newFromActorId( $row->first_actor )->getId();
 				} else {
 					$first_user = '';
 				}
 
 				$title = Title::makeTitle( $row->page_namespace, $row->page_title );
 				$output .= $sStartItem;
-				$output .= $this->buildOutput( $title, $title, $row->rev_timestamp,
-					$row->rev_user_text, $first_user, $first_time );
+				$output .= $this->buildOutput(
+					$title,
+					$title,
+					$row->rev_timestamp,
+					User::newFromActorId( $row->revactor_actor )->getName(),
+					$first_user,
+					$first_time
+				);
 				$output .= $sEndItem . "\n";
 			}
 		} else {
 			$output .= $sStartItem;
 			$row = $dbr->fetchObject( $res );
 			if ( $row ) {
-				$output .= $this->buildOutput( Title::makeTitle( $row->page_namespace,
-					$row->page_title ), $title, $row->rev_timestamp, $row->rev_user_text );
+				$userText = User::newFromActorId( $row->revactor_actor )->getName();
+				$output .= $this->buildOutput(
+					Title::makeTitle( $row->page_namespace, $row->page_title ),
+					$title,
+					$row->rev_timestamp,
+					$userText
+				);
 			} else {
 				$output .= $this->buildOutput( null, $title, $this->msg( 'dplforum-never' ) );
 			}
@@ -458,9 +467,9 @@ class DPLForum {
 	/**
 	 * Generates a single line of output.
 	 *
-	 * @param $page
+	 * @param Title $page
 	 * @param Title $title
-	 * @param $time
+	 * @param int|string $time Usually revision.rev_timestamp but can be an i18n msg (dplforum-never)
 	 * @param string $user
 	 * @param string $author
 	 * @param string $made
