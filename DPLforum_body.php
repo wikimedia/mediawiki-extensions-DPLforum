@@ -205,8 +205,6 @@ class DPLForum {
 	 * @return string
 	 */
 	function parse( &$input, &$parser ) {
-		global $wgContLang;
-
 		$this->sInput =& $input;
 		$sPrefix = $this->get( 'prefix', '', $parser );
 		$this->sOmit = $this->get( 'omit', $sPrefix, $parser );
@@ -243,7 +241,7 @@ class DPLForum {
 		$this->bCompactAuthor = ( $arg == 'author' || $arg == 'all' );
 
 		$arg = $this->get( 'namespace', '', $parser );
-		$iNamespace = $wgContLang->getNsIndex( $arg );
+		$iNamespace = MediaWikiServices::getInstance()->getContentLanguage()->getNsIndex( $arg );
 		if ( !$iNamespace ) {
 			if ( ( $arg ) || ( $arg === '0' ) ) {
 				$iNamespace = intval( $arg );
