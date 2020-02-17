@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Joseph",
-			"Karduelis"
+			"Karduelis",
+			"BaRaN6161 TURK"
 		]
 	},
-	"dplforum-desc": "DPL-temelli forum eklentisi",
-	"dplforum-by": "$1 tarafından",
-	"dplforum-edited": "- Son değiştirme",
+	"dplforum-desc": "DPL-temelli forum uzantısı",
+	"dplforum-by": "$1",
+	"dplforum-edited": "- Son düzenleme",
 	"dplforum-never": "Asla",
 	"dplforum-toofew": "DPL Forum: Çok az kategori!",
 	"dplforum-toomany": "DPL Forum: Çok fazla kategori!"
