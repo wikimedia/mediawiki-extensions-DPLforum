@@ -3,13 +3,14 @@
 		"authors": [
 			"Hydra",
 			"Wmr",
-			"Wmr89502270"
+			"Wmr89502270",
+			"铁桶"
 		]
 	},
-	"dplforum-desc": "基于 DPL 论坛推广",
+	"dplforum-desc": "基于DPL的论坛扩展",
 	"dplforum-by": "由 $1",
 	"dplforum-edited": "- 最后编辑",
 	"dplforum-never": "从不",
-	"dplforum-toofew": "DPL 论坛：太少类别！",
-	"dplforum-toomany": "DPL 论坛：太多类别！"
+	"dplforum-toofew": "DPL论坛：分类过少！",
+	"dplforum-toomany": "DPL论坛：分类过多！"
 }
