@@ -401,13 +401,12 @@ class DPLForum {
 				$sSqlWhere .= 'DESC';
 			}
 		}
-		$sSqlWhere .= " LIMIT $start, $count";
 
 		// DEBUG: output SQL query
-		// $output .= 'QUERY: [' . $sSqlSelectFrom . $sSqlWhere . "]<br />";
+		// $output .= 'QUERY: [' . $dbr->limitResult( $sSqlSelectFrom . $sSqlWhere, $count, $start ) . "]<br />";
 
 		// process the query
-		$res = $dbr->query( $sSqlSelectFrom . $sSqlWhere, __METHOD__ );
+		$res = $dbr->query( $dbr->limitResult( $sSqlSelectFrom . $sSqlWhere, $count, $start ), __METHOD__ );
 
 		$this->vMarkNew = $dbr->timestamp( time() -
 			intval( $this->get( 'newdays', 7 ) * 86400 ) );
