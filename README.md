@@ -1,6 +1,6 @@
 # DPLforum
 
-DPLforum v3.4.0 -- DynamicPageList-based forum extension
+DPLforum v3.7.1 -- DynamicPageList-based forum extension
 
 Author: Ross McClure
 https://www.mediawiki.org/wiki/User:Algorithm
@@ -12,4 +12,4 @@ DynamicPageList written by:
 ## Installation
 
 To install, add following to LocalSettings.php
- > require_once("$IP/extensions/DPLforum/DPLforum.php");
+ > wfLoadExtension( 'DPLforum' );
