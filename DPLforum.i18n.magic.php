@@ -1,11 +1,11 @@
 <?php
 /**
- *  Magic words for extension.
+ * Magic words for extension.
  */
 
-$magicWords = array();
+$magicWords = [];
 
 /** English (English) */
-$magicWords['en'] = array(
-	'forumlink' => array( 0, 'forumlink' ),
-);
+$magicWords['en'] = [
+	'forumlink' => [ 0, 'forumlink' ],
+];

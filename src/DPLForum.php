@@ -28,17 +28,32 @@
 use MediaWiki\MediaWikiServices;
 
 class DPLForum {
-	public $minCategories = 1;           // Minimum number of categories to look for
-	public $maxCategories = 6;           // Maximum number of categories to look for
-	public $maxResultCount = 50;         // Maximum number of results to allow
-	public $unlimitedResults = true;     // Allow unlimited results
-	public $unlimitedCategories = false; // Allow unlimited categories
-	public $requireCache = false;        // Only clear the cache on purge
+	/** Minimum number of categories to look for */
+	public $minCategories = 1;
 
-	// Restricted namespaces cannot be searched for page author or creation time.
-	// Unless this array is empty, namespace-free searches are also restricted.
-	// Note: Only integers in this array are checked.
-	public $restrictNamespace = []; // No restrictions
+	/** Maximum number of categories to look for */
+	public $maxCategories = 6;
+
+	/** Maximum number of results to allow */
+	public $maxResultCount = 50;
+
+	/** Allow unlimited results */
+	public $unlimitedResults = true;
+
+	/** Allow unlimited categories */
+	public $unlimitedCategories = false;
+
+	/** Only clear the cache on purge */
+	public $requireCache = false;
+
+	/**
+	 * Restricted namespaces cannot be searched for page author or creation time.
+	 * Unless this array is empty, namespace-free searches are also restricted.
+	 * Note: Only integers in this array are checked.
+	 *
+	 * No restrictions.
+	 */
+	public $restrictNamespace = [];
 
 	public $bTableMode;
 	public $bTimestamp;
@@ -58,7 +73,7 @@ class DPLForum {
 	public $sLastEditFormat;
 
 	/**
-	 * @param Parser $parser
+	 * @param Parser &$parser
 	 * @param string $name
 	 *
 	 * @return Title[]
@@ -68,7 +83,7 @@ class DPLForum {
 		if ( preg_match_all( "/^\s*$name\s*=\s*(.*)/mi", $this->sInput, $matches ) ) {
 			foreach ( $matches[1] as $cat ) {
 				$title = Title::newFromText( $parser->replaceVariables( trim( $cat ) ) );
-				if ( !is_null( $title ) ) {
+				if ( $title !== null ) {
 					$cats[] = $title;
 				}
 			}
@@ -88,7 +103,7 @@ class DPLForum {
 			$arg = trim( $matches[1] );
 			if ( is_int( $value ) ) {
 				return intval( $arg );
-			} elseif ( is_null( $parser ) ) {
+			} elseif ( $parser === null ) {
 				return htmlspecialchars( $arg );
 			} else {
 				return $parser->replaceVariables( $arg );
@@ -98,7 +113,7 @@ class DPLForum {
 	}
 
 	/**
-	 * @param Parser $parser
+	 * @param Parser &$parser
 	 * @param int $count
 	 * @param string $page
 	 * @param string $text
@@ -125,7 +140,7 @@ class DPLForum {
 		} else {
 			$i += intval( $offset / $count );
 		}
-		if ( $this->link_test( $i, $page ) ) {
+		if ( $this->linkTest( $i, $page ) ) {
 			return '';
 		}
 
@@ -141,12 +156,12 @@ class DPLForum {
 	}
 
 	/**
-	 * @param $page
-	 * @param $cond
+	 * @param int $page
+	 * @param string $cond
 	 *
 	 * @return bool
 	 */
-	function link_test( $page, $cond ) {
+	function linkTest( $page, $cond ) {
 		if ( preg_match( "/\\d+(\\D+)(\\d+)/", $cond, $m ) ) {
 			$m[1] = strtr( $m[1], [
 				( '&l' . 't;' ) => '<',
@@ -188,7 +203,8 @@ class DPLForum {
 	 *
 	 * @return string
 	 */
-	function date( $ts, $type = 'date', $df = false ) { // based on Language::date()
+	function date( $ts, $type = 'date', $df = false ) {
+		// based on Language::date()
 		global $wgLang;
 		$ts = wfTimestamp( TS_MW, $ts );
 		$ts = $wgLang->userAdjust( $ts );
@@ -199,8 +215,8 @@ class DPLForum {
 	}
 
 	/**
-	 * @param $input
-	 * @param Parser $parser
+	 * @param string &$input
+	 * @param Parser &$parser
 	 *
 	 * @return string
 	 */
@@ -299,7 +315,7 @@ class DPLForum {
 		if ( !( $bCountMode || $this->requireCache || $this->get( 'cache' ) == 'true' ) ) {
 			$parser->getOutput()->updateCacheExpiry( 0 );
 
-			if ( is_null( $title ) ) {
+			if ( $title === null ) {
 				global $wgRequest;
 				$start += intval( $wgRequest->getVal( 'offset' ) );
 			}
@@ -308,14 +324,15 @@ class DPLForum {
 			$start = 0;
 		}
 
-		if ( is_null( $title ) ) {
+		if ( $title === null ) {
 			$count = $this->get( 'count', 0 );
 			if ( $count > 0 ) {
 				if ( $count > $this->maxResultCount ) {
 					$count = $this->maxResultCount;
 				}
 			} elseif ( $this->unlimitedResults ) {
-				$count = 0x7FFFFFFF; // maximum integer value
+				// maximum integer value
+				$count = 0x7FFFFFFF;
 			} else {
 				$count = $this->maxResultCount;
 			}
@@ -418,7 +435,7 @@ class DPLForum {
 			} else {
 				$output .= '0';
 			}
-		} elseif ( is_null( $title ) ) {
+		} elseif ( $title === null ) {
 			foreach ( $res as $row ) {
 				if ( isset( $row->first_time ) ) {
 					$first_time = $row->first_time;

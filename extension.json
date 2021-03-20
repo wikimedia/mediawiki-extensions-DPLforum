@@ -34,8 +34,8 @@
 		"DPLforumNamespaces": "DPLforum.namespaces.php"
 	},
 	"AutoloadClasses": {
-		"DPLForum": "DPLforum_body.php",
-		"DPLForumHooks": "DPLForumHooks.php"
+		"DPLForum": "src/DPLForum.php",
+		"DPLForumHooks": "src/DPLForumHooks.php"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "DPLForumHooks::onParserFirstCallInit"
