@@ -427,7 +427,7 @@ class DPLForum {
 				}
 
 				if ( isset( $row->first_actor ) ) {
-					$first_user = User::newFromActorId( $row->first_actor )->getId();
+					$first_user = User::newFromActorId( $row->first_actor )->getName();
 				} else {
 					$first_user = '';
 				}
