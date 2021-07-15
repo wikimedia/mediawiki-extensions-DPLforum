@@ -7,6 +7,8 @@
 
 $namespaceNames = [];
 
+$namespaceAliases = [];
+
 // For wikis where the DPLforum extension is not installed.
 if ( !defined( 'NS_FORUM' ) ) {
 	define( 'NS_FORUM', 110 );
@@ -86,4 +88,32 @@ $namespaceNames['sr-el'] = [
 $namespaceNames['vi'] = [
 	NS_FORUM => 'Diễn_đàn',
 	NS_FORUM_TALK => 'Thảo_luận_Diễn_đàn',
+];
+
+/** Chinese (中文) */
+$namespaceNames['zh'] = [
+	NS_FORUM => 'Forum',
+	NS_FORUM_TALK => 'Forum_talk',
+];
+
+/** Simplified Chinese (中文（简体）) */
+$namespaceNames['zh-hans'] = [
+	NS_FORUM => '论坛',
+	NS_FORUM_TALK => '论坛讨论',
+];
+
+$namespaceAliases['zh-hans'] = [
+	'论坛' => NS_FORUM,
+	'论坛讨论' => NS_FORUM_TALK,
+];
+
+/** Traditional Chinese (中文（繁體）) */
+$namespaceNames['zh-hant'] = [
+	NS_FORUM => '論壇',
+	NS_FORUM_TALK => '論壇討論',
+];
+
+$namespaceAliases['zh-hant'] = [
+	'論壇' => NS_FORUM,
+	'論壇討論' => NS_FORUM_TALK,
 ];
