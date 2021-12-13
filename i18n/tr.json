@@ -3,10 +3,11 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Joseph",
-			"Karduelis"
+			"Karduelis",
+			"MuratTheTurkish"
 		]
 	},
-	"dplforum-desc": "DPL-temelli forum uzantısı",
+	"dplforum-desc": "DPL tabanlı forum uzantısı",
 	"dplforum-by": "$1",
 	"dplforum-edited": "- Son düzenleme",
 	"dplforum-never": "Asla",
