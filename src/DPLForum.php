@@ -429,7 +429,7 @@ class DPLForum {
 			intval( $this->get( 'newdays', 7 ) * 86400 ) );
 
 		if ( $bCountMode ) {
-			$row = $dbr->fetchObject( $res );
+			$row = $res->fetchObject();
 			if ( $row ) {
 				$output .= $row->num_rows;
 			} else {
@@ -463,7 +463,7 @@ class DPLForum {
 			}
 		} else {
 			$output .= $sStartItem;
-			$row = $dbr->fetchObject( $res );
+			$row = $res->fetchObject();
 			if ( $row ) {
 				$userText = User::newFromActorId( $row->revactor_actor )->getName();
 				$output .= $this->buildOutput(
