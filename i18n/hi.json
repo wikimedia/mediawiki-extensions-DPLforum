@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ansumang"
+			"Ansumang",
+			"Saurmandal"
 		]
 	},
-	"dplforum-never": "कभी नहीं"
+	"dplforum-desc": "DPL-आधारित फ़ोरम एक्सटेंशन",
+	"dplforum-by": "$1 द्वारा",
+	"dplforum-edited": "- आखिरी संपादन",
+	"dplforum-never": "कभी नहीं",
+	"dplforum-toofew": "DPL फ़ोरम: बहुत कम श्रेणियाँ हैं!",
+	"dplforum-toomany": "DPL फ़ोरम: बहुत ज़्यादा श्रेणियाँ हैं!"
 }
