@@ -344,9 +344,16 @@ class DPLForum {
 		$sRevTable = $dbr->tableName( 'revision' );
 		$categorylinks = $dbr->tableName( 'categorylinks' );
 
-		$actorTable = $dbr->tableName( 'revision_actor_temp' );
-		$sSqlSelectFrom = "SELECT page_namespace, page_title, r.rev_timestamp, rat.revactor_actor";
-		$arg = " FROM $sPageTable INNER JOIN $sRevTable AS r ON page_latest = r.rev_id INNER JOIN $actorTable AS rat ON revactor_rev = r.rev_id";
+		$sSqlSelectFrom = "SELECT page_namespace, page_title, r.rev_timestamp, r.rev_actor";
+		$arg = " FROM $sPageTable INNER JOIN $sRevTable AS r ON page_latest = r.rev_id";
+
+		// Remove once we drop support for MediaWiki versions < 1.39
+		global $wgActorTableSchemaMigrationStage;
+		if ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_TEMP ) {
+			$actorTable = $dbr->tableName( 'revision_actor_temp' );
+			$sSqlSelectFrom = "SELECT page_namespace, page_title, r.rev_timestamp, rat.revactor_actor";
+			$arg = " FROM $sPageTable INNER JOIN $sRevTable AS r ON page_latest = r.rev_id INNER JOIN $actorTable AS rat ON revactor_rev = r.rev_id";
+		}
 
 		if ( $bCountMode ) {
 			$sSqlSelectFrom = "SELECT COUNT(*) AS num_rows FROM $sPageTable";
@@ -355,8 +362,14 @@ class DPLForum {
 			( ( !$this->restrictNamespace ) ||
 				( $iNamespace >= 0 && !in_array( $iNamespace, $this->restrictNamespace ) ) )
 		) {
-			$sSqlSelectFrom .= ", rat.revactor_actor AS first_actor, o.rev_timestamp AS first_time" . $arg .
+			$sSqlSelectFrom .= ", rat.rev_actor AS first_actor, o.rev_timestamp AS first_time" . $arg .
 				" INNER JOIN $sRevTable AS o ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable AS q WHERE q.rev_page = page_id )";
+
+			// Remove once we drop support for MediaWiki versions < 1.39
+			if ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_TEMP ) {
+				$sSqlSelectFrom .= ", rat.revactor_actor AS first_actor, o.rev_timestamp AS first_time" . $arg .
+					" INNER JOIN $sRevTable AS o ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable AS q WHERE q.rev_page = page_id )";
+			}
 		} else {
 			if ( $sOrder == 'first_time' ) {
 				$sOrder = 'page_id';
@@ -430,6 +443,12 @@ class DPLForum {
 
 		if ( $bCountMode ) {
 			$row = $res->fetchObject();
+
+			// Remove once we drop support for MediaWiki versions < 1.39
+			if ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_TEMP ) {
+				$row->rev_actor = $row->revactor_actor;
+			}
+
 			if ( $row ) {
 				$output .= $row->num_rows;
 			} else {
@@ -455,7 +474,7 @@ class DPLForum {
 					$title,
 					$title,
 					$row->rev_timestamp,
-					User::newFromActorId( $row->revactor_actor )->getName(),
+					User::newFromActorId( $row->rev_actor )->getName(),
 					$first_user,
 					$first_time
 				);
@@ -464,8 +483,14 @@ class DPLForum {
 		} else {
 			$output .= $sStartItem;
 			$row = $res->fetchObject();
+
+			// Remove once we drop support for MediaWiki versions < 1.39
+			if ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_TEMP ) {
+				$row->rev_actor = $row->revactor_actor;
+			}
+
 			if ( $row ) {
-				$userText = User::newFromActorId( $row->revactor_actor )->getName();
+				$userText = User::newFromActorId( $row->rev_actor )->getName();
 				$output .= $this->buildOutput(
 					Title::makeTitle( $row->page_namespace, $row->page_title ),
 					$title,
