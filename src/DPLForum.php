@@ -362,7 +362,7 @@ class DPLForum {
 			( ( !$this->restrictNamespace ) ||
 				( $iNamespace >= 0 && !in_array( $iNamespace, $this->restrictNamespace ) ) )
 		) {
-			$sSqlSelectFrom .= ", rat.rev_actor AS first_actor, o.rev_timestamp AS first_time" . $arg .
+			$sSqlSelectFrom .= ", o.rev_actor AS first_actor, o.rev_timestamp AS first_time" . $arg .
 				" INNER JOIN $sRevTable AS o ON o.rev_id =( SELECT MIN(q.rev_id) FROM $sRevTable AS q WHERE q.rev_page = page_id )";
 
 			// Remove once we drop support for MediaWiki versions < 1.39
