@@ -8,10 +8,13 @@
 			"Shirayuki",
 			"Siebrand",
 			"The Evil IP address",
-			"Umherirrender"
+			"Umherirrender",
+			"Winston Sung"
 		]
 	},
 	"dplforum-desc": "Short description of the [[mw:Extension:DPLforum|DPLforum extension]], shown on [[Special:Version]]. DPL stands for Dynamic Page Listing.\n{{desc|name=DPLforum|url=https://www.mediawiki.org/wiki/Extension:DPLforum}}",
+	"nstab-forum": "The name for the tab of the Forum namespace.",
+	"tooltip-ca-nstab-forum": "Tooltip shown when hovering over the {{msg-mw|Nstab-forum}} tab.",
 	"dplforum-by": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n\nParameters:\n* $1 - a username\n{{Identical|By}}",
 	"dplforum-edited": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.",
 	"dplforum-never": "Part of the [[mw:Extension:DPLforum|DPLforum extension]]. DPL stands for Dynamic Page Listing.\n{{Identical|Never}}",
