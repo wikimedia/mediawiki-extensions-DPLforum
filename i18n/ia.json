@@ -5,6 +5,8 @@
 		]
 	},
 	"dplforum-desc": "Extension pro foros basate in DPL",
+	"nstab-forum": "Foro",
+	"tooltip-ca-nstab-forum": "Visitar le pagina del foro",
 	"dplforum-by": "per $1",
 	"dplforum-edited": "- Ultime modification",
 	"dplforum-never": "Nunquam",

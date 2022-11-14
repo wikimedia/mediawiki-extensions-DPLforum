@@ -3,11 +3,14 @@
 		"authors": [
 			"Leinad",
 			"McMonster",
+			"Rail",
 			"Sp5uhe",
 			"Wpedzich"
 		]
 	},
 	"dplforum-desc": "Forum oparte na DPL",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Zobacz stronę forum",
 	"dplforum-by": "przez $1",
 	"dplforum-edited": "– ostatnia edycja",
 	"dplforum-never": "Nigdy",

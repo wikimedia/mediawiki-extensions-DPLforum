@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Fryed-peach",
+			"MathXplore",
 			"Shirayuki",
 			"What here area team"
 		]
 	},
 	"dplforum-desc": "DPL (動的ページ一覧) ベースのフォーラムを実現する拡張機能",
+	"nstab-forum": "フォーラム",
+	"tooltip-ca-nstab-forum": "フォーラムページを見る",
 	"dplforum-by": "$1 による",
 	"dplforum-edited": "- 最終編集",
 	"dplforum-never": "なし",

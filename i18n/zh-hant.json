@@ -6,6 +6,8 @@
 		]
 	},
 	"dplforum-desc": "基於DPL的論壇擴充功能",
+	"nstab-forum": "論壇",
+	"tooltip-ca-nstab-forum": "檢視論壇頁面",
 	"dplforum-by": "由$1",
 	"dplforum-edited": "- 最後編輯",
 	"dplforum-never": "尚無",

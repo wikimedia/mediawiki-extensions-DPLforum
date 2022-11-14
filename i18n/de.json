@@ -7,6 +7,8 @@
 		]
 	},
 	"dplforum-desc": "DPL-basierte Forumserweiterung",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Die Forumssseite ansehen",
 	"dplforum-by": "durch $1",
 	"dplforum-edited": "- Zuletzt bearbeitet",
 	"dplforum-never": "Nie",

@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo.mps"
+			"Eduardo.mps",
+			"Eduardoaddad"
 		]
 	},
 	"dplforum-desc": "Extensão de fórum baseada em DPL",
+	"nstab-forum": "Fórum",
 	"dplforum-by": "por $1",
 	"dplforum-edited": "- Última edição",
 	"dplforum-never": "Nunca",

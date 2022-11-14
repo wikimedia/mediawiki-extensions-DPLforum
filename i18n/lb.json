@@ -5,6 +5,8 @@
 		]
 	},
 	"dplforum-desc": "DPL-baséiert Forumerweiderungen",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "D'Forum-Säit weisen",
 	"dplforum-by": "vum $1",
 	"dplforum-edited": "- Vir d'läscht geännert",
 	"dplforum-never": "Ni",
