@@ -9,6 +9,8 @@
 		]
 	},
 	"dplforum-desc": "Extension forum basée sur DPL",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Afficher la page du forum",
 	"dplforum-by": "par $1",
 	"dplforum-edited": "– Dernière modification",
 	"dplforum-never": "Jamais",

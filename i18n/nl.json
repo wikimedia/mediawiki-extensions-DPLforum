@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"AHendriksen-collecties",
 			"SPQRobin",
 			"Siebrand"
 		]
 	},
 	"dplforum-desc": "Forumuitbreiding gebaseerd op DPL",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Bekijk de forumpagina",
 	"dplforum-by": "door $1",
 	"dplforum-edited": "- Laatste bewerking",
 	"dplforum-never": "Nooit",

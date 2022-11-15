@@ -5,6 +5,8 @@
 		]
 	},
 	"dplforum-desc": "Форумски додаток на основа на DPL",
+	"nstab-forum": "Форум",
+	"tooltip-ca-nstab-forum": "Преглед на форумската страница",
 	"dplforum-by": "од $1",
 	"dplforum-edited": "—  последно уредување",
 	"dplforum-never": "Никогаш",
