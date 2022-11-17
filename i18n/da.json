@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Saederup92",
+			"SiGNOUT",
 			"Tjernobyl"
 		]
 	},
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Se forumsiden",
 	"dplforum-by": "af $1",
 	"dplforum-never": "Aldrig"
 }
