@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Sveinn í Felli",
 			"පසිඳු කාවින්ද"
 		]
 	},
+	"nstab-forum": "Spjallsvæði",
+	"tooltip-ca-nstab-forum": "Skoða síðu spjallsvæðisins",
 	"dplforum-never": "Aldrei"
 }

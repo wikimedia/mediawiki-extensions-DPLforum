@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"BlueDevil",
-			"Huji"
+			"Huji",
+			"Jeeputer"
 		]
 	},
 	"dplforum-desc": "افزونهٔ تالار گفتگو مبتنی بر DPL",
+	"nstab-forum": "انجمن",
 	"dplforum-by": "توسط $1",
 	"dplforum-edited": "- آخرین ویرایش",
 	"dplforum-never": "هرگز",

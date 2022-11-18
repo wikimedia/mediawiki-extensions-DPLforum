@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hamilton Abreu",
 			"Malafaya"
 		]
 	},
 	"dplforum-desc": "Extensão de fórum baseada em DPL",
+	"nstab-forum": "Fórum",
+	"tooltip-ca-nstab-forum": "Ver a página do fórum",
 	"dplforum-by": "por $1",
 	"dplforum-edited": "- Última edição",
 	"dplforum-never": "Nunca",
