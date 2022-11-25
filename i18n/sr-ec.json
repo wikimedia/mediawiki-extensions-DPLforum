@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kizule",
+			"Milicevic01",
 			"Rancher",
 			"Verlor",
 			"Zoranzoki21",
@@ -9,6 +10,7 @@
 		]
 	},
 	"dplforum-desc": "Проширење за форум засновано на DPL-у",
+	"nstab-forum": "Форум",
 	"dplforum-by": "од $1",
 	"dplforum-edited": "– последња измена",
 	"dplforum-never": "Никад",
