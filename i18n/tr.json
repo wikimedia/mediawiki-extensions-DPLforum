@@ -4,10 +4,13 @@
 			"BaRaN6161 TURK",
 			"Joseph",
 			"Karduelis",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"SaldırganSincap"
 		]
 	},
 	"dplforum-desc": "DPL tabanlı forum uzantısı",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Forum sayfasını gör",
 	"dplforum-by": "$1",
 	"dplforum-edited": "- Son düzenleme",
 	"dplforum-never": "Asla",
