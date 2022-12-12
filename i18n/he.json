@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Rotemliss",
 			"YaronSh"
 		]
 	},
 	"dplforum-desc": "הרחבת פורום מבוסס DPL",
+	"nstab-forum": "פורום",
+	"tooltip-ca-nstab-forum": "צפייה בדף היחידה",
 	"dplforum-by": "על ידי $1",
 	"dplforum-edited": "- נערכה לאחרונה",
 	"dplforum-never": "מעולם לא",

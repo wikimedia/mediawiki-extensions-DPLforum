@@ -11,6 +11,7 @@
 	},
 	"dplforum-desc": "Проширење за форум засновано на DPL-у",
 	"nstab-forum": "Форум",
+	"tooltip-ca-nstab-forum": "Види страницу форума",
 	"dplforum-by": "од $1",
 	"dplforum-edited": "– последња измена",
 	"dplforum-never": "Никад",
