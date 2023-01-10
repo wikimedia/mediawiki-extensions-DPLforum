@@ -4,5 +4,10 @@
 			"Eleassar"
 		]
 	},
-	"dplforum-by": "avtor: $1"
+	"dplforum-desc": "Razširitev foruma, ki temelji na DPL",
+	"dplforum-by": "avtor: $1",
+	"dplforum-edited": "– Zadnje urejanje",
+	"dplforum-never": "Nikoli",
+	"dplforum-toofew": "DPL Forum: Premalo kategorij!",
+	"dplforum-toomany": "DPL Forum: Preveč kategorij!"
 }
