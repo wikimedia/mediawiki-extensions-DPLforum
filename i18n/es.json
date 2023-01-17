@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Ciencia Al Poder",
-			"Crazymadlover"
+			"Crazymadlover",
+			"Fitoschido"
 		]
 	},
 	"dplforum-desc": "Extensión de foro basado en DPL",
+	"nstab-forum": "Foro",
 	"dplforum-by": "por $1",
 	"dplforum-edited": "- Última edición",
 	"dplforum-never": "Nunca",
