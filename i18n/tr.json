@@ -5,6 +5,7 @@
 			"Joseph",
 			"Karduelis",
 			"MuratTheTurkish",
+			"Rapsar",
 			"SaldırganSincap"
 		]
 	},
@@ -12,7 +13,7 @@
 	"nstab-forum": "Forum",
 	"tooltip-ca-nstab-forum": "Forum sayfasını gör",
 	"dplforum-by": "$1",
-	"dplforum-edited": "- Son düzenleme",
+	"dplforum-edited": "- Son değişiklik",
 	"dplforum-never": "Asla",
 	"dplforum-toofew": "DPL Forum: Çok az kategori!",
 	"dplforum-toomany": "DPL Forum: Çok fazla kategori!"
