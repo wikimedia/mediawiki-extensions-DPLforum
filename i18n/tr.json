@@ -4,12 +4,14 @@
 			"BaRaN6161 TURK",
 			"Joseph",
 			"Karduelis",
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"Rapsar",
+			"SaldırganSincap"
 		]
 	},
 	"dplforum-desc": "DPL tabanlı forum uzantısı",
 	"dplforum-by": "$1",
-	"dplforum-edited": "- Son düzenleme",
+	"dplforum-edited": "- Son değişiklik",
 	"dplforum-never": "Asla",
 	"dplforum-toofew": "DPL Forum: Çok az kategori!",
 	"dplforum-toomany": "DPL Forum: Çok fazla kategori!"
