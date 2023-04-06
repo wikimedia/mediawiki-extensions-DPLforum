@@ -2,10 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Laaknor"
+			"Laaknor",
+			"EdoAug"
 		]
 	},
 	"dplforum-desc": "DPL-basert forumutvidelse",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Vis forumsiden",
 	"dplforum-by": "av $1",
 	"dplforum-edited": "- sist endret",
 	"dplforum-never": "Aldri",
