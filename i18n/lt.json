@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vpovilaitis"
+			"Vpovilaitis",
+			"Nokeoo"
 		]
 	},
 	"dplforum-desc": "DPL-pavidalo forumų plėtinys",
+	"nstab-forum": "Forumas",
+	"tooltip-ca-nstab-forum": "Žiūrėti forumo puslapį",
 	"dplforum-by": "naudotojas $1",
 	"dplforum-edited": "- Paskutinis pakeitimas",
 	"dplforum-never": "Naujesnis",
