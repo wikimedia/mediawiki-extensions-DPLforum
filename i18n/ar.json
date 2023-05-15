@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Alnokta",
+			"Alshamiri1",
 			"Meno25",
 			"OsamaK"
 		]
 	},
 	"dplforum-desc": "امتداد منتدى معتمد على DPL",
+	"nstab-forum": "المنتدى",
+	"tooltip-ca-nstab-forum": "عرض صفحة المنتدى",
 	"dplforum-by": "بواسطة $1",
 	"dplforum-edited": "- آخر تعديل",
 	"dplforum-never": "أبدا",
