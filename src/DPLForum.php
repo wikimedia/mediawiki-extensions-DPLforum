@@ -251,7 +251,7 @@ class DPLForum {
 		}
 
 		$arg = $this->get( 'compact' );
-		if ( $arg == 'all' || strpos( $arg, 'edit' ) === 0 ) {
+		if ( $arg == 'all' || $arg == 'editor' ) {
 			$this->bCompactEdit = $this->bAddLastEdit;
 		}
 		$this->bCompactAuthor = ( $arg == 'author' || $arg == 'all' );
@@ -311,7 +311,7 @@ class DPLForum {
 
 		$count = 1;
 		$start = $this->get( 'start', 0 );
-		$title = Title::newFromText( $parser->replaceVariables( trim( $this->get( 'title' ) ) ) );
+		$title = Title::newFromText( $parser->replaceVariables( trim( $this->get( 'title' ) ?? '' ) ) );
 		if ( !( $bCountMode || $this->requireCache || $this->get( 'cache' ) == 'true' ) ) {
 			$parser->getOutput()->updateCacheExpiry( 0 );
 
@@ -339,7 +339,7 @@ class DPLForum {
 		}
 
 		// build the SQL query
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = self::getDBReadHandle();
 		$sPageTable = $dbr->tableName( 'page' );
 		$sRevTable = $dbr->tableName( 'revision' );
 		$categorylinks = $dbr->tableName( 'categorylinks' );
@@ -646,5 +646,23 @@ class DPLForum {
 		}
 
 		return $output;
+	}
+
+	/**
+	 * Get a handle for reading database.
+	 *
+	 * This is a wrapper for wfGetDB() with support for MW 1.39+.
+	 * Since we only read database, there are no codes for write operations.
+	 * @see https://phabricator.wikimedia.org/T330641
+	 *
+	 * @return IDatabase
+	 */
+	public static function getDBReadHandle() {
+		$service = MediaWikiServices::getInstance();
+		if ( method_exists( $service, 'getConnectionProvider' ) ) {
+			return $service->getConnectionProvider()->getReplicaDatabase();
+		} else {
+			return $service->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		}
 	}
 }
