@@ -4,7 +4,9 @@
 			"Toliño"
 		]
 	},
-	"dplforum-desc": "Extensión DPL baseada no foro",
+	"dplforum-desc": "Extensión de foro baseada en DPL",
+	"nstab-forum": "Foro",
+	"tooltip-ca-nstab-forum": "Ver a páxina do foro",
 	"dplforum-by": "por $1",
 	"dplforum-edited": "- Última edición",
 	"dplforum-never": "Nunca",
