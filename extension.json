@@ -1,13 +1,13 @@
 {
 	"name": "DPLforum",
-	"version": "3.7.2",
+	"version": "3.7.3",
 	"author": "Ross McClure",
 	"license-name": "GPL-2.0-or-later",
 	"url": "https://www.mediawiki.org/wiki/Extension:DPLforum",
 	"descriptionmsg": "dplforum-desc",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.37.0"
+		"MediaWiki": ">= 1.39.4"
 	},
 	"MessagesDirs": {
 		"DPLforum": [
