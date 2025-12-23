@@ -3,10 +3,13 @@
 		"authors": [
 			"Crt",
 			"Nike",
-			"Tarmo"
+			"Tarmo",
+			"Jack Phoenix"
 		]
 	},
 	"dplforum-desc": "DPL-pohjainen foorumilaajennus",
+	"nstab-forum": "Foorumi",
+	"tooltip-ca-nstab-forum": "Tarkastele foorumisivua",
 	"dplforum-by": "tehnyt $1",
 	"dplforum-edited": "– Viimeksi muokattu",
 	"dplforum-never": "Ei koskaan",
