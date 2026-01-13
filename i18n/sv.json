@@ -2,10 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Lejonel",
-			"Najami"
+			"Najami",
+			"Stefan2255"
 		]
 	},
 	"dplforum-desc": "Forumtillägg baserat på DPL",
+	"nstab-forum": "Forum",
+	"tooltip-ca-nstab-forum": "Visa forumsidan",
 	"dplforum-by": "av $1",
 	"dplforum-edited": "- senast ändrad",
 	"dplforum-never": "Aldrig",
