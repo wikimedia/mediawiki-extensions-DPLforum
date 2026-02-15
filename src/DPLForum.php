@@ -410,16 +410,41 @@ class DPLForum {
 
 		$n = 1;
 		for ( $i = 0; $i < $cats; $i++ ) {
-			$sSqlSelectFrom .= " INNER JOIN $categorylinks AS" .
-				" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
-				$dbr->addQuotes( $aCategories[$i]->getDBkey() );
+			if ( version_compare( MW_VERSION, '1.45', '>=' ) ) {
+				// 1.45+
+				$sSqlSelectFrom .= " INNER JOIN $categorylinks AS" .
+					" c{$n} ON page_id = c{$n}.cl_from" .
+					" INNER JOIN linktarget AS lt{$n} ON c{$n}.cl_target_id = lt{$n}.lt_id" .
+					" AND lt{$n}.lt_namespace = " . NS_CATEGORY .
+					" AND lt{$n}.lt_title = " . $dbr->addQuotes( $aCategories[$i]->getDBkey() );
+			} else {
+				// < 1.45
+				$sSqlSelectFrom .= " INNER JOIN $categorylinks AS" .
+					" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
+					$dbr->addQuotes( $aCategories[$i]->getDBkey() );
+			}
 			$n++;
 		}
 		for ( $i = 0; $i < $nocats; $i++ ) {
-			$sSqlSelectFrom .= " LEFT OUTER JOIN $categorylinks AS" .
-				" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
-				$dbr->addQuotes( $aExcludeCategories[$i]->getDBkey() );
-			$sSqlWhere .= " AND c{$n}.cl_to IS NULL";
+			if ( version_compare( MW_VERSION, '1.45', '>=' ) ) {
+				// 1.45+
+				$sSqlSelectFrom .= " LEFT OUTER JOIN $categorylinks AS" .
+					" c{$n} ON page_id = c{$n}.cl_from" .
+					" AND c{$n}.cl_target_id = (" .
+					"SELECT lt_id FROM linktarget" .
+					" WHERE lt_namespace = " . NS_CATEGORY .
+					" AND lt_title = " .
+					$dbr->addQuotes( $aExcludeCategories[$i]->getDBkey() ) .
+					")";
+
+				$sSqlWhere .= " AND c{$n}.cl_from IS NULL";
+			} else {
+				// < 1.45
+				$sSqlSelectFrom .= " LEFT OUTER JOIN $categorylinks AS" .
+					" c{$n} ON page_id = c{$n}.cl_from AND c{$n}.cl_to=" .
+					$dbr->addQuotes( $aExcludeCategories[$i]->getDBkey() );
+				$sSqlWhere .= " AND c{$n}.cl_to IS NULL";
+			}
 			$n++;
 		}
 
