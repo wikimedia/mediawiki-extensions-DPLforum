@@ -25,6 +25,7 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 
@@ -130,9 +131,8 @@ class DPLForum {
 		if ( $this->requireCache ) {
 			$offset = 0;
 		} else {
-			global $wgRequest;
 			$parser->getOutput()->updateCacheExpiry( 0 );
-			$offset = intval( $wgRequest->getVal( 'offset', '' ) );
+			$offset = intval( RequestContext::getMain()->getRequest()->getVal( 'offset', '' ) );
 		}
 
 		$i = intval( $page );
@@ -317,8 +317,7 @@ class DPLForum {
 			$parser->getOutput()->updateCacheExpiry( 0 );
 
 			if ( $title === null ) {
-				global $wgRequest;
-				$start += intval( $wgRequest->getVal( 'offset' ) );
+				$start += intval( RequestContext::getMain()->getRequest()->getVal( 'offset' ) );
 			}
 		}
 		if ( $start < 0 ) {
