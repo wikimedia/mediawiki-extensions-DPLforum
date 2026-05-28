@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Aleksandrit",
+			"Daisy40",
 			"Lockal",
 			"Александр Сигачёв"
 		]
 	},
 	"dplforum-desc": "Форумное расширение, основанное на DPL",
+	"nstab-forum": "Форум",
 	"dplforum-by": "от $1",
 	"dplforum-edited": "— последняя правка",
 	"dplforum-never": "Никогда",
