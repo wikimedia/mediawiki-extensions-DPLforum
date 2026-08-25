@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Wizzard"
 		]
 	},
 	"dplforum-desc": "Rozšírenie DPL fórum",
+	"nstab-forum": "Fórum",
+	"tooltip-ca-nstab-forum": "Zobraziť stránku fóra",
 	"dplforum-by": "napísal $1",
 	"dplforum-edited": "- posledná úprava",
 	"dplforum-never": "Nikdy",
