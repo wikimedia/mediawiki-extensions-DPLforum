@@ -1,9 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"dplforum-desc": "د DPL پربنسټ د ټولنځي شاتاړی",
+	"nstab-forum": "ټولنځی",
+	"tooltip-ca-nstab-forum": "د ټولنځي مخ کتل",
+	"dplforum-by": "د $1 له‌خوا",
+	"dplforum-edited": "- وروستی ځل سم‌شوی",
 	"dplforum-never": "هېڅکله",
 	"dplforum-toofew": "DPL Forum: لږ شمېر وېشنيزې!",
 	"dplforum-toomany": "DPL Forum: ګڼ شمېر وېشنيزې!"
